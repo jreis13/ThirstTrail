@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_29_171555) do
+ActiveRecord::Schema.define(version: 2021_11_30_112635) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,10 +34,8 @@ ActiveRecord::Schema.define(version: 2021_11_29_171555) do
     t.string "event_type"
     t.string "daytime"
     t.string "cocktail_category"
-    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_preferences_on_user_id"
   end
 
   create_table "recipe_ingredients", force: :cascade do |t|
@@ -83,7 +81,6 @@ ActiveRecord::Schema.define(version: 2021_11_29_171555) do
 
   add_foreign_key "preference_ingredients", "ingredients"
   add_foreign_key "preference_ingredients", "preferences"
-  add_foreign_key "preferences", "users"
   add_foreign_key "recipe_ingredients", "ingredients"
   add_foreign_key "recipe_ingredients", "recipes"
   add_foreign_key "user_recipes", "recipes"
