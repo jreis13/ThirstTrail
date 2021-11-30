@@ -5,3 +5,47 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'json'
+require 'rest-client'
+require 'open-uri'
+
+Ingredient.destroy_all
+Recipe.destroy_all
+RecipeIngredient.destroy_all
+
+puts "collecting ingredients"
+
+url = "https://www.thecocktaildb.com/api/json/v2/9973533/list.php?i=list"
+ingredients_data = JSON.parse(RestClient.get(url))
+
+ingredients_data['drinks'].each do |ingredient|
+  Ingredient.new(name: ingredient["strIngredient1"]).save
+end
+
+puts "#{Ingredient.count} created."
+
+url = "https://www.thecocktaildb.com/api/json/v2/9973533/recent.php"
+recipes_data = JSON.parse(RestClient.get(url))
+
+recipes_data['drinks'].each do |drink|
+  recipe = Recipe.new(
+    name: drink["strDrink"],
+    instruction: drink["strInstructions"]
+  )
+  recipe.save
+
+  i = 1
+
+  15.times do
+    ingredient = drink["strIngredient#{i}"]
+    if ingredient.nil? || ingredient == ""
+      break
+    end
+    measure = drink["strMeasure#{i}"]
+    RecipeIngredient.new(recipe: recipe, ingredient: Ingredient.find_by_name(ingredient), measure: measure)
+    i += 1
+  end
+end
+
+puts "#{Recipe.count} recipes created"
