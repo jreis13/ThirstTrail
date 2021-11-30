@@ -1,1 +1,54 @@
 // Specific CSS for your home-page
+body {
+  background: #fff6ea;
+}
+
+.container-img {
+  background-size: contain;
+  background-image: asset-url("background-home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 22vh;
+}
+
+.title, .subtitle {
+  text-align: center;
+  color: #F98C22;
+}
+
+.title {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.info-title {
+  color: #F98C22;
+  font-size: 14px;
+  text-align: center;
+}
+
+.info-details {
+  color: #fAA24C;
+  font-size: 12px;
+  text-align: center;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-row {
+  display: flex;
+  justify-content: space-between;
+}
