@@ -1,0 +1,6 @@
+<%= simple_form_for @preference do |f| %>
+  <%= f.input :event_type, collection: @event_type %>
+  <%= f.input :daytime, collection: @daytime %>
+  <%= f.input :cocktail_category, collection: @cocktail_category %>
+  <%= f.button :submit %>
+<% end %>

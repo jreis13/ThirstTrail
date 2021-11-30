@@ -1,1 +1,69 @@
 // Specific CSS for your home-page
+body {
+  background: #fff6ea;
+}
+
+.container-img {
+  background-size: contain;
+  background-image: asset-url("background-home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 22vh;
+}
+
+.title, .subtitle {
+  text-align: center;
+  color: #F98C22;
+}
+
+.title {
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.info-title {
+  color: #000000;
+  font-size: 21px;
+  text-align: center;
+}
+
+.info-details {
+  color: #888888;
+  font-size: 16px;
+  // font-weight: lighter;
+  text-align: center;
+}
+
+.home-card {
+  padding: 15px 25px;
+}
+
+.btn-home {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-ghost {
+  background-color: #ff8e00;
+  color: white;
+  border: 1px solid #ff8e00 ;
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-weight: bolder;
+  opacity: 0.9;
+  transition: none;
+    &:hover {
+      color: white;
+      background-color: #ff8e00;
+      opacity: 1;
+      transition: 0.5s;
+    }
+}
