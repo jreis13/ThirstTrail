@@ -3,6 +3,7 @@ class PreferencesController < ApplicationController
   end
 
   def new
+
     @event_type = ["Home", "Business", "Special Ocasion"]
     @daytime = ["Day", "Night"]
     @cocktail_category = ["Fruity", "Spicy", "Salty",  "Sour"]

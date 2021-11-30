@@ -138,8 +138,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
-    rack-mini-profiler (2.3.3)
-      rack (>= 1.2.0)
     rack-proxy (0.7.0)
       rack
     rack-test (1.1.0)
@@ -238,8 +236,12 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
+<<<<<<< HEAD
   x86_64-darwin-20
   x86_64-linux
+=======
+  ruby
+>>>>>>> a38ec3ed850c55d7883dfa50c3f8fd666bd14a0c
 
 DEPENDENCIES
   autoprefixer-rails (= 10.2.5)
@@ -255,7 +257,6 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma (~> 5.0)
-  rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
   redis (~> 4.0)
   sass-rails (>= 6)
