@@ -49,3 +49,7 @@ recipes_data['drinks'].each do |drink|
 end
 
 puts "#{Recipe.count} recipes created"
+
+# random drink added here
+url = "www.thecocktaildb.com/api/json/v1/1/random.php"
+random_cocktail = JSON.parse(RestClient.get(url))
