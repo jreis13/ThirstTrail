@@ -6,30 +6,50 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts 'Deleting DB...'
+require 'json'
+require 'rest-client'
+require 'open-uri'
 
-Recipe.delete_all
-Ingredient.delete_all
-RecipeIngredient.delete_all
+Ingredient.destroy_all
+Recipe.destroy_all
+RecipeIngredient.destroy_all
 
-puts 'DB successfully destroyed.'
+puts "collecting ingredients"
 
-puts 'Generating new DB...'
+url = "https://www.thecocktaildb.com/api/json/v2/9973533/list.php?i=list"
+ingredients_data = JSON.parse(RestClient.get(url))
 
-ingredient1 = Ingredient.create(name: "Tabasco Sauce")
-ingredient2 = Ingredient.create(name: "Salt")
-ingredient3 = Ingredient.create(name: "Strawberries")
-ingredient4 = Ingredient.create(name: "Lime juice")
+ingredients_data['drinks'].each do |ingredient|
+  Ingredient.new(name: ingredient["strIngredient1"]).save
+end
 
-recipe1 = Recipe.create(name: "Bloody Mary", instruction: "aaaa")
-recipe2 = Recipe.create(name: "Margarita", instruction: "aaaa")
-recipe3 = Recipe.create(name: "Strawberry Daiquiri", instruction: "aaaa")
-recipe4 = Recipe.create(name: "Mojito", instruction: "aaaa")
+puts "#{Ingredient.count} created."
 
-measure1 = RecipeIngredient.create(recipe: recipe1, ingredient: ingredient1, measure: "1 ts")
-measure2 = RecipeIngredient.create(recipe: recipe2, ingredient: ingredient2, measure: "1 ts")
-measure3 = RecipeIngredient.create(recipe: recipe3, ingredient: ingredient3, measure: "4 pcs")
-measure4 = RecipeIngredient.create(recipe: recipe4, ingredient: ingredient4, measure: "2 tbs")
+url = "https://www.thecocktaildb.com/api/json/v2/9973533/recent.php"
+recipes_data = JSON.parse(RestClient.get(url))
 
+recipes_data['drinks'].each do |drink|
+  recipe = Recipe.new(
+    name: drink["strDrink"],
+    instruction: drink["strInstructions"]
+  )
+  recipe.save
 
-puts 'All set, DB successfully created!'
+  i = 1
+
+  15.times do
+    ingredient = drink["strIngredient#{i}"]
+    if ingredient.nil? || ingredient == ""
+      break
+    end
+    measure = drink["strMeasure#{i}"]
+    RecipeIngredient.new(recipe: recipe, ingredient: Ingredient.find_by_name(ingredient), measure: measure)
+    i += 1
+  end
+end
+
+puts "#{Recipe.count} recipes created"
+
+# random drink added here
+url = "www.thecocktaildb.com/api/json/v1/1/random.php"
+random_cocktail = JSON.parse(RestClient.get(url))
