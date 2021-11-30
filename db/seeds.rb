@@ -10,11 +10,16 @@ require 'json'
 require 'rest-client'
 require 'open-uri'
 
+puts "Destroying ingredients"
 Ingredient.destroy_all
+
+puts "Destroying recipes"
 Recipe.destroy_all
+
+puts "Destroying recipes ingredients"
 RecipeIngredient.destroy_all
 
-puts "collecting ingredients"
+puts "Collecting ingredients"
 
 url = "https://www.thecocktaildb.com/api/json/v2/9973533/list.php?i=list"
 ingredients_data = JSON.parse(RestClient.get(url))
@@ -42,13 +47,14 @@ recipes_data['drinks'].each do |drink|
     if ingredient.nil? || ingredient == ""
       break
     end
+
     measure = drink["strMeasure#{i}"]
     RecipeIngredient.new(recipe: recipe, ingredient: Ingredient.find_by_name(ingredient), measure: measure)
     i += 1
   end
 end
 
-puts "#{Recipe.count} recipes created"
+puts "All set. #{Recipe.count} recipes created"
 
 # random drink added here
 # url = "www.thecocktaildb.com/api/json/v1/1/random.php"
