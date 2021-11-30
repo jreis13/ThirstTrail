@@ -1,12 +1,15 @@
 class PreferencesController < ApplicationController
+  def index
+  end
+
   def new
+    @event_type = ["Home", "Business", "Special Ocasion"]
+    @daytime = ["Day", "Night"]
+    @cocktail_category = ["Fruity", "Spicy", "Salty",  "Sour"]
     @preference = Preference.new
   end
 
   def create
-    @event_type = ["Home", "Business", "Special Ocasion"]
-    @daytime = ["Day", "Night"]
-    @cocktail_category = ["Fruity", "Spicy", "Salty",  "Sour"]
     @preference = Preference.new(preference_params)
     @preference.save
     end
