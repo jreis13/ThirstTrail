@@ -12,8 +12,10 @@ class PreferencesController < ApplicationController
 
   def create
     @preference = Preference.new(preference_params)
+
     @preference.save
   end
+
 
   private
 
