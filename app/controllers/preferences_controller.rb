@@ -3,7 +3,6 @@ class PreferencesController < ApplicationController
   end
 
   def new
-
     @event_type = ["Home", "Business", "Special Ocasion"]
     @daytime = ["Day", "Night"]
     @cocktail_category = ["Fruity", "Spicy", "Salty",  "Sour"]
@@ -13,12 +12,11 @@ class PreferencesController < ApplicationController
   def create
     @preference = Preference.new(preference_params)
     @preference.save
-    end
+  end
 
   private
 
   def preference_params
     params.require(:preference).permit(:event_type, :daytime, :cocktail_category)
   end
-
 end
