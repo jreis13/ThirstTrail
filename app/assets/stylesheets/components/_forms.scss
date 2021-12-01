@@ -7,6 +7,23 @@
   margin: auto;
 }
 
+.btn-login {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  &:hover {
+    color: #272626;
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
 .signup-form {
   width:100%;
   margin-top: 20px;
@@ -29,9 +46,9 @@
   // padding-top: 10px;
 }
 
-.signup-btn {
-  margin-top: 20px;
-}
+// .signup-btn {
+//   margin-top: 20px;
+// }
 
 .boolean {
   justify-content: center;
