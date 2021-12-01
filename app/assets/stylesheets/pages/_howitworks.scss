@@ -1,0 +1,73 @@
+body {
+    height: 100%;
+}
+
+p {
+    font-size: 20px;
+    line-height: 20px !important;
+    font-weight: 500
+}
+
+.small {
+    letter-spacing: 0.5px !important
+}
+
+.container {
+    margin-top: 50px
+}
+
+.card-header {
+    min-height: 11rem;
+    background: #ffffff
+}
+
+h6 {
+    color: #333
+}
+
+.card {
+    background: #ffffff
+}
+
+.img-1 {
+    position: relative;
+    object-fit: cover;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    top: -127px !important;
+    box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.2)
+}
+
+.quotes {
+    position: relative;
+    top: -90px
+}
+
+.quotes-img {
+    widows: 50px;
+    width: 30px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50% !important;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    margin: 0 15px 18px 15px;
+    color: #ffffff;
+    background-color: #F98C22 !important;
+    top: -10px;
+    position: relative
+}
+
+#carouselExampleIndicators {
+    box-shadow: -5px 15px 25px rgba(7, 7, 7, 0.3) !important
+}
+
+.carousel-inner {
+    border-radius: 0px !important
+}
