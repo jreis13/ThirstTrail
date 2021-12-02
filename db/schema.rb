@@ -111,6 +111,7 @@ ActiveRecord::Schema.define(version: 2021_12_02_120649) do
     t.string "alcohol"
     t.string "cocktail_category"
     t.string "ingredient"
+    t.string "image_url"
   end
 
   create_table "user_recipes", force: :cascade do |t|

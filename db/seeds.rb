@@ -37,6 +37,7 @@
   # recipe = Recipe.new(
    # name: drink["strDrink"],
     # instruction: drink["strInstructions"]
+    # image_url: drink["strDrinkThumb"]
   # )
   # recipe.save
 
