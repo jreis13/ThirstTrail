@@ -56,6 +56,22 @@ end
 
 puts "All set. #{Recipe.count} recipes created"
 
+puts avatar1 = URI.open('https://photos.smugmug.com/photos/i-86cmLwG/0/XL/i-86cmLwG-XL.jpg')
+joao = User.create(email: 'joao@gmail.com', first_name: 'Joao', last_name: 'Reis', password: '123456')
+joao.photo.attach(io: avatar1, filename: 'avatar1.png', content_type: 'image/png')
+
+puts "Created user -joao-"
+
+puts avatar2 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-VBwKbFF/1/7f98968c/XL/211105%20Le%20Wagon%20mug%20shots_144-XL.jpg')
+david = User.create(email: 'david@gmail.com', first_name: 'David', last_name: 'Carmo', password: '123456')
+david.photo.attach(io: avatar2, filename: 'avatar2.png', content_type: 'image/png')
+
+puts "Created user -david-"
+
+puts avatar3 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-W3xT8h6/0/f2212de9/X2/211105%20Le%20Wagon%20mug%20shots_114-X2.jpg')
+viktoriia = User.create(email: 'viktoriia@gmail.com', first_name: 'Viktoriia', last_name: 'Katyukova', password: '123456')
+viktoriia.photo.attach(io: avatar3, filename: 'avatar3.png', content_type: 'image/png')
+
 # random drink added here
 # url = "www.thecocktaildb.com/api/json/v1/1/random.php"
 # random_cocktail = JSON.parse(RestClient.get(url))
