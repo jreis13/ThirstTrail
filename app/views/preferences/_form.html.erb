@@ -56,7 +56,16 @@
         </div>
       </li>
       <li class="splide__slide">
-        <%= f.submit %>
+        <div class="questions-container" id="question-type">
+          <div class="question">
+            <p>Our expert mixologists are ready to create your recipe!</p>
+            <hr>
+            <div><iframe src="https://giphy.com/embed/l3fQaE2lbSAPUnB04" width="100%" height="190px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+          <br>
+          <hr>
+          <br>
+            <%= f.submit 'Generate recipe', class:"btn-recipe" %>
+          </div>
       </li>
     </ul>
   </div>
