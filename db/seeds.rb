@@ -36,7 +36,8 @@ recipes_data = JSON.parse(RestClient.get(url))
 recipes_data['drinks'].each do |drink|
   recipe = Recipe.new(
     name: drink["strDrink"],
-    instruction: drink["strInstructions"]
+    instruction: drink["strInstructions"],
+    image_url: drink["strDrinkThumb"]
   )
   recipe.save
 
