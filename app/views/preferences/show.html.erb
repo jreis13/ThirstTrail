@@ -1,0 +1,15 @@
+<div class="container">
+  <br>
+  <h1>Your Cocktail Selection:</h1>
+  <div class="container">
+    <div class="row">
+        <% @recipes.each do |recipe| %>
+          <div class="col-6">
+            <div class="card card-recipe box" style="background-image: url(<%=recipe.image_url%>)" >
+              <h2><%= recipe.name %></h2>
+            </div>
+          </div>
+        <%end%>
+    </div>
+  </div>
+</div>
