@@ -12,6 +12,7 @@ class PreferencesController < ApplicationController
 
   def create
     @preference = Preference.new(preference_params)
+
     @preference.save
   end
 
@@ -26,3 +27,7 @@ class PreferencesController < ApplicationController
     params.require(:preference).permit(:event_type, :daytime, :alcohol, :cocktail_category)
   end
 end
+
+# recipes = Recipe.where(alcohol: current_user.preferences.alcohol)
+# nsfw_filter = ["bad words"]
+# recipes = recipes.where(name != nsfw_filter)
