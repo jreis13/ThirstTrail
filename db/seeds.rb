@@ -60,6 +60,7 @@ puts avatar1 = URI.open('https://photos.smugmug.com/photos/i-86cmLwG/0/XL/i-86cm
 joao = User.create(email: 'joao@gmail.com', first_name: 'Joao', last_name: 'Reis', password: '123456')
 joao.photo.attach(io: avatar1, filename: 'avatar1.png', content_type: 'image/png')
 
+<<<<<<< HEAD
 puts "Created user -joao-"
 
 puts avatar2 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-VBwKbFF/1/7f98968c/XL/211105%20Le%20Wagon%20mug%20shots_144-XL.jpg')
@@ -70,6 +71,10 @@ puts "Created user -david-"
 
 puts avatar3 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-W3xT8h6/0/f2212de9/X2/211105%20Le%20Wagon%20mug%20shots_114-X2.jpg')
 viktoriia = User.create(email: 'viktoriia@gmail.com', first_name: 'Viktoriia', last_name: 'Katyukova', password: '123456')
+=======
+puts avatar3 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-W3xT8h6/0/f2212de9/X2/211105%20Le%20Wagon%20mug%20shots_114-X2.jpg')
+viktoriia = User.create(email: 'viktoria@gmail.com', first_name: 'Viktoriia', last_name: 'Katyukova', password: '123456')
+>>>>>>> 88ff619844df0986d99d69c4ff2d64c42c3aca46
 viktoriia.photo.attach(io: avatar3, filename: 'avatar3.png', content_type: 'image/png')
 
 # random drink added here
