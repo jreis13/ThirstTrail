@@ -3,7 +3,7 @@ class PreferencesController < ApplicationController
   end
 
   def new
-    @alcohol = ["Alcoholic", "Non-alcoholic"]
+    @alcohol = ["Alcoholic", "Non-alcoholic", "Optional Alcohol"]
     @event_type = ["Home", "Business", "Special Ocasion"]
     @daytime = ["Day", "Night"]
     @cocktail_category = ["Fruity", "Spicy", "Salty", "Sour"]
@@ -15,7 +15,6 @@ class PreferencesController < ApplicationController
 
     @preference.save
   end
-
 
   private
 

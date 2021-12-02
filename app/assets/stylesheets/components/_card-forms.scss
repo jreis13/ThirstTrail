@@ -1,3 +1,18 @@
+.my-slider-progress {
+    background: #ccc;
+  }
+
+.my-slider-progress-bar {
+  background: #F98C22;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+
+.splide__pagination {
+  display: none !important;
+}
+
 .remove-button {
   position: absolute;
   transform: scale(0);
@@ -35,14 +50,20 @@
   text-align: center;
   font-size: 24px;
   max-width: 450px;
-  min-height: 81vh;
-  margin: 100px auto;
+  min-height: 80vh;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .questions-cards {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  justify-content: center;
+}
+
+.fa-arrow-alt-circle-right, .fa-arrow-alt-circle-left {
+  color: #F98C22;
+  font-size: 30px;
 }
