@@ -16,6 +16,10 @@ class PreferencesController < ApplicationController
     @preference.save
   end
 
+  def show
+    @preference = Preference.find(params[:id])
+    @recipes = Recipe.all.slice(0..3)
+  end
 
   private
 
