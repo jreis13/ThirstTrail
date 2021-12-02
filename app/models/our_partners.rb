@@ -1,0 +1,2 @@
+class OurPartners < ApplicationRecord
+end
