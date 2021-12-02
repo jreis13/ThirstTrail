@@ -1,0 +1,48 @@
+.remove-button {
+  position: absolute;
+  transform: scale(0);
+}
+
+.remove-button:checked + label {
+  background-color: #F98C22;
+  color: white;
+}
+
+.hint {
+  color: #BBBBBB;
+  font-size: 14px;
+}
+
+// styling individual card
+.remove-button + label {
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 130px;
+  height: 100px;
+  text-align: center;
+  margin: 15px;
+}
+
+.questions-container {
+  padding: 30px 30px 0;
+  background: #FFFFFF;
+  //mix-blend-mode: normal;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  max-width: 450px;
+  min-height: 80vh;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.questions-cards {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
