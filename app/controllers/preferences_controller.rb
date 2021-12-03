@@ -20,8 +20,10 @@ class PreferencesController < ApplicationController
   end
 
   def show
-    @preference = Preference.find(params[:id])
-    @recipes = Recipe.where(alcohol: @preference.alcohol).where(event_type: @preference.event_type).where(cocktail_category: @preference.cocktail_category)
+    4.times do
+      @preference = Preference.find(params[:id])
+      @recipes = Recipe.where(alcohol: @preference.alcohol).where("? = ANY(event_type)", @preference.event_type).where("? = ANY(cocktail_category)", @preference.cocktail_category)
+    end
   end
 
   private

@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# require 'json'
-# require 'rest-client'
-# require 'open-uri'
+ require 'json'
+ require 'rest-client'
+ require 'open-uri'
 
 # puts "Destroying ingredients"
 # Ingredient.destroy_all
@@ -30,16 +30,16 @@
 
 # puts "#{Ingredient.count} created."
 
-# url = "https://www.thecocktaildb.com/api/json/v2/9973533/recent.php"
-# recipes_data = JSON.parse(RestClient.get(url))
+ url = "https://www.thecocktaildb.com/api/json/v2/9973533/recent.php"
+ recipes_data = JSON.parse(RestClient.get(url))
 
-# recipes_data['drinks'].each do |drink|
-  # recipe = Recipe.new(
+ recipes_data['drinks'].each do |drink|
+   recipe = Recipe.new(
    # name: drink["strDrink"],
     # instruction: drink["strInstructions"]
-    # image_url: drink["strDrinkThumb"]
-  # )
-  # recipe.save
+     image_url: drink["strDrinkThumb"]
+   )
+   recipe.save
 
   # i = 1
 
@@ -81,7 +81,7 @@ recipe1 = Recipe.create(name: "Absolutely Cranberry Smash",
  event_type: ["Home", "Business", "Special Ocasion"],
  instruction: "Stir ingredients together. Serve over ice.",
  alcohol: "Alcoholic",
- cocktail_category: "Fruity",
+ cocktail_category: ["Fruity"],
  ingredient: ["Absolut Vodka", "Cranberry juice", "Ginger ale", "Ice"])
 
 recipe2 = Recipe.create(name: "Strawberry Margarita",
@@ -95,19 +95,19 @@ recipe3 = Recipe.create(name: "Bora Bora",
  event_type: ["Home", "Business", "Special Ocasion"],
  instruction: "Prepare in a blender or shaker, serve in a highball glass on the rocks. Garnish with 1 slice of pineapple and one cherry.",
  alcohol: "Non alcoholic",
- cocktail_category: "Fruity",
+ cocktail_category: ["Fruity"],
  ingredient: ["Pineapple juice", "Passion fruit juice", "Lemon juice", "Grenadine"])
 
  recipe4 = Recipe.create(name: "Tequila Surprise",
  event_type: ["Home", "Business", "Special Ocasion"],
  instruction: "Fill shot glass with Tequila. Add drops of Tobasco sauce.",
  alcohol: "Alcoholic",
- cocktail_category: "Spicy",
+ cocktail_category: ["Spicy"],
  ingredient: ["Tequila", "Tabasco sauce"])
 
  recipe5 = Recipe.create(name: "Horse's Neck",
  event_type: ["Home", "Special Ocasion"],
  instruction: "Pour brandy and ginger ale directly into highball glass with ice cubes. Stir gently. Garnish with lemon zest. If desired, add dashes of Angostura Bitter.",
  alcohol: "Alcoholic",
- cocktail_category: "Sour",
+ cocktail_category: ["Sour"],
  ingredient: ["Lemon peel", "Brandy", "Ginger ale", "Bitters"])
