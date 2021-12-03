@@ -16,6 +16,6 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :instruction, :alcohol, event_type:, cocktail_category:, ingredient:)
+    params.require(:recipe).permit(:name, :instruction, :alcohol, :event_type, :cocktail_category, :ingredient)
   end
 end
