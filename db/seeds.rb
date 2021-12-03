@@ -156,7 +156,7 @@ recipe3 = Recipe.create(name: "Bora Bora",
  alcohol: "Alcoholic",
  cocktail_category: ["Fruity"],
  ingredient: ["Lime", "Mango", "Mint", "White Rum", "Ice", "Soda Water", "Mango"],
- image_url: "https://unsplash.com/photos/fpDHg0Sbpyc")
+ image_url: "https://www.aberdeenskitchen.com/wp-content/uploads/2018/07/Fresh-Mint-Mango-Mojito-3.jpg")
 
  recipe11 = Recipe.create(name: "Kiwi Martini",
  event_type: ["Home", "Business", "Special Ocasion"],
@@ -164,7 +164,7 @@ recipe3 = Recipe.create(name: "Bora Bora",
  alcohol: "Alcoholic",
  cocktail_category: ["Sour"],
  ingredient: ["Kiwi", "Sugar Syrup", "Vodka", "Kiwi"],
- image_url: "https://unsplash.com/photos/DylH5pnrBP8")
+ image_url: "https://image.freepik.com/fotos-gratis/cocktail-de-fruta-kiwi-no-copo-de-martini-guarnecido-com-fatias-de-maca-no-espeto-de-bambu_141793-1913.jpg")
 
  recipe12 = Recipe.create(name: "Adam Bomb",
  event_type: ["Home", "Special Ocasion"],
