@@ -1,3 +1,18 @@
+.my-slider-progress {
+    background: #ccc;
+  }
+
+.my-slider-progress-bar {
+  background: #F98C22;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+
+.splide__pagination {
+  display: none !important;
+}
+
 .remove-button {
   position: absolute;
   transform: scale(0);
@@ -19,7 +34,7 @@
   background: #FFFFFF;
   border: 1px solid #DDDDDD;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 130px;
   height: 100px;
   text-align: center;
@@ -35,14 +50,40 @@
   text-align: center;
   font-size: 24px;
   max-width: 450px;
-  min-height: 81vh;
-  margin: 100px auto;
+  min-height: 80vh;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .questions-cards {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  justify-content: center;
+}
+
+.fa-arrow-alt-circle-right, .fa-arrow-alt-circle-left {
+  color: #F98C22;
+  font-size: 30px;
+}
+
+.btn-recipe {
+  background-color: #ff8e00;
+  color: white;
+  letter-spacing: 2px;
+  border: 1px solid #ff8e00 ;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-weight: bolder;
+  opacity: 0.9;
+  transition: none;
+    &:hover {
+      color: white;
+      background-color: #ff8e00;
+      opacity: 1;
+      transition: 0.5s;
+    }
 }
