@@ -13,8 +13,8 @@
 # puts "Destroying ingredients"
 # Ingredient.destroy_all
 
-# puts "Destroying recipes"
-# Recipe.destroy_all
+ puts "Destroying recipes"
+ Recipe.destroy_all
 
 # puts "Destroying recipes ingredients"
 # RecipeIngredient.destroy_all
@@ -30,17 +30,17 @@
 
 # puts "#{Ingredient.count} created."
 
- url = "https://www.thecocktaildb.com/api/json/v2/9973533/recent.php"
- recipes_data = JSON.parse(RestClient.get(url))
+#  url = "https://www.thecocktaildb.com/api/json/v2/9973533/recent.php"
+#  recipes_data = JSON.parse(RestClient.get(url))
 
- recipes_data['drinks'].each do |drink|
-   recipe = Recipe.new(
-   # name: drink["strDrink"],
-    # instruction: drink["strInstructions"]
-     image_url: drink["strDrinkThumb"]
-   )
-   recipe.save
-
+#  #recipes_data['drinks'].each do |drink|
+#    recipe = Recipe.new(
+#    # name: drink["strDrink"],
+#     # instruction: drink["strInstructions"]
+#      image_url: drink["strDrinkThumb"]
+#    )
+#    recipe.save
+#  end
   # i = 1
 
   # 15.times do
