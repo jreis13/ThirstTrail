@@ -1,4 +1,4 @@
-class RecipesController < ApplicationController
+class IngredientsController < ApplicationController
   def index
     @ingredients = Ingredient.all
   end
@@ -8,11 +8,11 @@ class RecipesController < ApplicationController
   end
 
   def new
-    @recipe = Recipe.new
+    @ingredient = Ingredient.new
   end
 
   def create
-    @recipe = Recipe.new(ingredient_params)
+    @ingredient = Ingredient.new(ingredient_params)
 
   end
 
