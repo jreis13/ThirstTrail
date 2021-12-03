@@ -12,15 +12,27 @@ class PreferencesController < ApplicationController
 
   def create
     @preference = Preference.new(preference_params)
-
-    @preference.save
+    if @preference.save
+      redirect_to @preference
+    elsif @preference.alcohol.empty?
+      flash[:alert] = 'Starting over: Please tell us if you want alcohol on your cocktail.'
+      redirect_to new_preference_path(anchor: 'question-alcohol')
+    elsif @preference.event_type.empty?
+      flash[:alert] = 'Starting over: Please tell us which kind of event are you hosting.'
+      redirect_to new_preference_path(anchor: 'question-alcohol')
+    elsif @preference.cocktail_category.empty?
+      flash[:alert] = 'Starting over: Please tell us your cocktail taste preference.'
+      redirect_to new_preference_path(anchor: 'question-alcohol')
+    else
+      render :new
+    end
   end
 
   def show
     @preference = Preference.find(params[:id])
     @recipes = Recipe.all.slice(0..3)
   end
-  
+
   private
 
   def preference_params

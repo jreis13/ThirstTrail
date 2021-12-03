@@ -58,7 +58,7 @@ end
 puts "All set. #{Recipe.count} recipes created"
 
 puts avatar1 = URI.open('https://photos.smugmug.com/photos/i-86cmLwG/0/XL/i-86cmLwG-XL.jpg')
-joao = User.create(email: 'joao@gmail.com', first_name: 'Joao', last_name: 'Reis', password: '123456')
+joao = User.create(email: 'joao1@gmail.com', first_name: 'Joao', last_name: 'Reis', password: '123456')
 joao.photo.attach(io: avatar1, filename: 'avatar1.png', content_type: 'image/png')
 
 puts avatar3 = URI.open('https://photos.smugmug.com/C/EMPRESAS/LeWagon/n-Pmb29k/211111/i-W3xT8h6/0/f2212de9/X2/211105%20Le%20Wagon%20mug%20shots_114-X2.jpg')
