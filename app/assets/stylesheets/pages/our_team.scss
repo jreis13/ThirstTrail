@@ -17,6 +17,12 @@
     margin-bottom: 28px
 }
 
+.hint-about {
+  color: #BBBBBB;
+  font-size: 14px;
+  text-align: center;
+}
+
 .our-team-main img {
     border-radius: 50%;
     margin-bottom: 20px;
@@ -37,11 +43,13 @@
     height: auto;
     position: absolute;
     top: 10px;
+    color: #8a8787;
     left: 2px;
     right: 2px;
+    letter-spacing: 1px;
     padding: 5px 15px 0 15px;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     background: #fff6ea;
 
 }
