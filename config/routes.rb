@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get '/ourteam', to: 'pages#ourteam'
   get '/partners', to: 'partners#ourpartners'
   resources :preferences, only: [:index, :new, :create, :show]
+  resources :recipes, only: :show
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
