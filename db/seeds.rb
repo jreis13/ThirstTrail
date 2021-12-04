@@ -7,15 +7,10 @@ require 'open-uri'
 puts "Destroying DB"
 Recipe.destroy_all
 
-avatar1 = URI.open('https://res.cloudinary.com/drjmsp9it/image/upload/v1638530441/development/jreis-profile-removebg-preview_gghujw.png')
-joao = User.create(email: 'joao@gmail.com', first_name: 'Joao', last_name: 'Reis', password: '123456')
-joao.photo.attach(io: avatar1, filename: 'avatar1.png', content_type: 'image/png')
-puts "Created user -Joao-"
-
-avatar2 = URI.open('https://res.cloudinary.com/drjmsp9it/image/upload/v1638530441/development/vik-removebg-preview_ewsadc.png')
-viktoriia = User.create(email: 'viktoriia@gmail.com', first_name: 'Viktoriia', last_name: 'Katyukova', password: '123456')
-viktoriia.photo.attach(io: avatar2, filename: 'avatar2.png', content_type: 'image/png')
-puts "Created user -Viktoriia-"
+avatar1 = URI.open('https://images.unsplash.com/photo-1546776310-eef45dd6d63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1020&q=80')
+admin = User.create(email: 'admin@test.com', first_name: 'admin', last_name: 'test', password: '123456')
+admin.photo.attach(io: avatar1, filename: 'avatar1.png', content_type: 'image/png')
+puts "Created user -admin-"
 
 # Creating recipes
 # Recipe 1
