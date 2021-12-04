@@ -148,7 +148,7 @@ Recipe.create(name: "Pineapple Ginger-Ale Smoothie",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Throw everything into a blender and liquify.",
               alcohol: "Non-alcoholic",
-              cocktail_category: ["Spicy"],
+              cocktail_category: ["Fruity"],
               ingredient: ["Ginger ale", "Pineapple"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/eg9i1d1487603469.jpg")
 puts "Created recipe: Pineapple Ginger-Ale Smoothie"
@@ -486,7 +486,7 @@ puts "Created recipe: Brave Bull Shooter"
 # Recipe 47
 Recipe.create(name: "Barracuda",
               event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Shake pour ingredients with ice. Strain into glass, top with Sparkling wine.",
+              instruction: "Shake ingredients with ice. Strain into glass & top with sparkling wine.",
               alcohol: "Alcoholic",
               cocktail_category: ["Spicy"],
               ingredient: ["Rum", "Galliano", "Pineapple Juice", "Lime juice", "Prosecco"],
