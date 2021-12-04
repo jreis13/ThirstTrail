@@ -35,7 +35,6 @@ body {
 .info-title {
   color: #000000;
   font-size: 21px;
-  text-align: center;
 }
 
 .info-details {
@@ -48,6 +47,7 @@ body {
 
 .home-card {
   padding: 15px 25px;
+    text-align: center !important;
 }
 
 .btn-home {
