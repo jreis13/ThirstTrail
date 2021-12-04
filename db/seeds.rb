@@ -80,7 +80,7 @@ puts "Created recipe: Mountain Bramble"
 
 # Recipe 7
 Recipe.create(name: "Apple Highball",
-              event_type: ["Home", "Business","Special Ocasion"],
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Add ice in a highball glass. Rub a wedge of fresh lime around rim and place it in the glass. Add a shot of Apple schnapps, a shot of Courvoisier and top up with ginger ale.",
               alcohol: "Alcoholic",
               cocktail_category: ["Spicy"],
