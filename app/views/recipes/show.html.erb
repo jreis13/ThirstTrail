@@ -16,11 +16,6 @@
           <div class="font-size-instruction"><%= @recipe.instruction %></div>
         </div>
         <hr>
-        <p class="ingredient-list">Ingredients:</p>
-        <div class="font-size-ingredient"><%= @recipe.ingredient.join(" • ") %></div>
-        <hr>
-        <p class="instructions">How to make it:</p>
-        <div class="font-size-instruction"><%= @recipe.instruction %></div>
       </div>
     <div class="btn-recipe-show">
       <%= link_to "Mix again!", new_preference_path, class: "btn btn-ghost-recipe" %>
