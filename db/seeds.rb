@@ -1,9 +1,9 @@
-#Requiring
+# Requiring
 require 'json'
 require 'rest-client'
 require 'open-uri'
 
-#Destroying DB
+# Destroying DB
 puts "Destroying DB"
 Recipe.destroy_all
 
@@ -522,6 +522,306 @@ Recipe.create(name: "Citrus Vodka Killer",
               ingredient: ["Vodka lemon", "Orange juice", "Triple sec", "Ginger ale"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/yvxrwv1472669728.jpg")
 puts "Created recipe: Citrus Vodka Killer"
+
+# Recipe 51
+Recipe.create(name: "Chocolate Black Russian",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Combine all ingredients in an electric blender and blend at a low speed for a short length of time. Pour into a chilled champagne flute and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Kahlua", "Vodka", "Chocolate ice-cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yyvywx1472720879.jpg")
+puts "Created recipe: Chocolate Black Russian"
+
+# Recipe 52
+Recipe.create(name: "Screaming Orgasm",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Vodka", "Baileys irish cream", "Kahlua"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/x894cs1504388670.jpg")
+puts "Created recipe: Screaming Orgasm"
+
+# Recipe 53
+Recipe.create(name: "Almeria",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Dark rum", "Kahlua", "Egg white"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg")
+puts "Created recipe: Almeria"
+
+# Recipe 54
+Recipe.create(name: "Pysch Vitamin Light",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake with ice.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Orange juice", "Apple juice", "Pineapple juice", "Ice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/xsqsxw1441553580.jpg")
+puts "Created recipe: Pysch Vitamin Light"
+
+# Recipe 55
+Recipe.create(name: "Big Red",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour ingredients into 1 ounce shot glass",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Irish cream", "Goldschlager"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yqwuwu1441248116.jpg")
+puts "Created recipe: Big Red"
+
+# Recipe 56
+Recipe.create(name: "Martinez 2",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Add all ingredients to a mixing glass and fill with ice. Stir until chilled, and strain into a chilled coupe glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Gin", "Sweet Vermouth", "Maraschino Liqueur", "Angostura Bitters"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg")
+puts "Created recipe: Martinez 2"
+
+# Recipe 57
+Recipe.create(name: "Port Wine Flip",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients (except nutmeg) with ice and strain into a whiskey sour glass. Sprinkle nutmeg on top and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Port", "Light cream", "Powdered sugar", "Egg", "Nutmeg"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vrprxu1441553844.jpg")
+puts "Created recipe: Port Wine Flip"
+
+# Recipe 58
+Recipe.create(name: "Port Wine Cocktail",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Stir ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Port", "Brandy"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/qruprq1441553976.jpg")
+puts "Created recipe: Port Wine Cocktail"
+
+# Recipe 59
+Recipe.create(name: "Zenmeister",
+              event_type: ["Home", "Business", "Special OOcasion"],
+              instruction: "Mix together and enjoy",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Jägermeister", "Root beer"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/qyuvsu1479209462.jpg")
+puts "Created recipe: Zenmeister"
+
+# Recipe 60
+Recipe.create(name: "Long Island Tea",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Combine all ingredients (except cola) and pour over ice in a highball glass. Add the splash of cola for color. Decorate with a slice of lemon and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Vodka", "Light rum", "Gin", "Tequila", "Lemon", "Coca-Cola"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg")
+puts "Created recipe: Long Island Tea"
+
+# Recipe 61
+Recipe.create(name: "Blueberry Mojito",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Muddle the blueberries with the other ingredients and serve in a highball glass. Garnish with mint and a half slice of lime.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Dark Rum", "Lime Juice", "Sugar", "Blueberries", "Lemon-lime soda"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/07iep51598719977.jpg")
+puts "Created recipe: Blueberry Mojito"
+
+# Recipe 62
+Recipe.create(name: "Zoksel",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "No specific mixinginstructions, just poor every ingredient in one glass. The lemon goes with it.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Beer", "Root beer", "Lemonade", "Coca-Cola", "7-Up", "Creme de Cassis", "Lemon",],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/ft8ed01485620930.jpg")
+puts "Created recipe: Zoksel"
+
+# Recipe 63
+Recipe.create(name: "Acapulco",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Combine and shake all ingredients (except mint) with ice and strain into an old-fashioned glass over ice cubes. Add the sprig of mint and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Light rum", "Triple sec", "Lime juice", "Sugar", "Egg white", "Mint"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/il9e0r1582478841.jpg")
+puts "Created recipe: Acapulco"
+
+# Recipe 64
+Recipe.create(name: "Bluebird",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "In a mixing glass half-filled with crushed ice, combine the gin, triple sec, Curacao, and bitters. Stir well. Strain into a cocktail glass and garnish with the lemon twist and the cherry.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Triple sec", "Blue Curacao", "Bitters", "Maraschino cherry", "Lemon peel"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/5jhyd01582579843.jpg")
+puts "Created recipe: Bluebird"
+
+# Recipe 65
+Recipe.create(name: "Midnight Manx",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Fill a mixer with ice and add Baileys, Kahlua, Goldshlager, and cream. Shake for 5 seconds and Strain into a double rocks glass filled with ice. Add chilled coffee Stir and enjoy!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Kahlua", "Baileys irish cream", "Goldschlager", "Heavy cream", "Coffee"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uqqurp1441208231.jpg")
+puts "Created recipe: Midnight Manx"
+
+# Recipe 66
+Recipe.create(name: "Applecar",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Applejack", "Triple sec", "Lemon juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/sbffau1504389764.jpg")
+puts "Created recipe: Applecar"
+
+# Recipe 67
+Recipe.create(name: "Alice in Wonderland",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Just mix the three ingredients one to one to one",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Amaretto", "Grand Marnier", "Southern Comfort"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/g12lj41493069391.jpg")
+puts "Created recipe: Alice in Wonderland"
+
+# Recipe 68
+Recipe.create(name: "Alexander",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Gin", "Creme de Cacao", "Light cream", "Nutmeg"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/0clus51606772388.jpg")
+puts "Created recipe: Alexander"
+
+# Recipe 69
+Recipe.create(name: "Slippery Nipple",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Pour the Sambuca into a shot glass, then pour the Irish Cream on top so that the two liquids do not mix.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Sambuca", "Irish cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/l9tgru1551439725.jpg")
+puts "Created recipe: Slippery Nipple"
+
+# Recipe 70
+Recipe.create(name: "Queen Charlotte",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour red wine and grenadine into a collins glass over ice cubes. Fill with lemon-lime soda, stir, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Red wine", "Grenadine", "Lemon-lime soda"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vqruyt1478963249.jpg")
+puts "Created recipe: Queen Charlotte"
+
+# Recipe 71
+Recipe.create(name: "Golden dream",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake with cracked ice. Strain into glass and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Galliano", "Triple Sec", "Orange juice", "Cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/qrot6j1504369425.jpg")
+puts "Created recipe: Golden dream"
+
+# Recipe 72
+Recipe.create(name: "Flaming Lamborghini",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Pour the Sambuca and Kahlua into the Cocktail Glass and give the drinker a straw. Pour the Baileys and Blue Curacao into two sepsrate shot glasses either side of the cocktail glass. Set light the concotion in the cocktail glass and start to drink through the straw (this drink should be drunk in one) , as the bottom of the glass is reached put out the fire by pouring the Baileys and Blue Curacao into the cocktail glass and keep drinking till it's all gone!!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Kahlua", "Sambuca", "Blue Curacao", "Baileys irish cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yywpss1461866587.jpg")
+puts "Created recipe: Flaming Lamborghini"
+
+# Recipe 73
+Recipe.create(name: "Aztec Punch",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Mix all ingredients in a pitcher. Mix thoroughly and pour into whatever is available, the bigger the better! This drink packs a big punch, so don't over do it.",,
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Lemonade", "Vodka", "Rum", "Ginger ale"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uqwuyp1454514591.jpg")
+puts "Created recipe: Aztec Punch"
+
+# Recipe 74
+Recipe.create(name: "Jackhammer",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Serve over ice- Warning,Deadly!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Jack Daniels","Amaretto"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/9von5j1504388896.jpg")
+puts "Created recipe: Jackhammer"
+
+# Recipe 75
+Recipe.create(name: "Moranguito",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "first you put rhe absinthe, then put tequila, then put the Granadine syrup.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Absinthe", "Tequila", "Grenadine"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/urpsyq1475667335.jpg")
+puts "Created recipe: Moranguito"
+
+# Recipe 76
+Recipe.create(name: "Classic Old-Fashioned",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "In an old-fashioned glass, muddle the bitters and water into the sugar cube, using the back of a teaspoon. Almost fill the glass with ice cubes and add the bourbon. Garnish with the orange slice and the cherry. Serve with a swizzle stick.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Bitters", "Water", "Sugar", "Bourbon", "Orange", "Maraschino cherry"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/w8cxqv1582485254.jpg")
+puts "Created recipe: Classic Old-Fashioned"
+
+# Recipe 77
+Recipe.create(name: "Godchild",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients well with cracked ice, strain into a champagne flute, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Vodka", "Amaretto", "Heavy cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/m5nhtr1504820829.jpg")
+puts "Created recipe: Godchild"
+
+# Recipe 78
+Recipe.create(name: "B-53",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Layer the Kahlua, Sambucca and Grand Marnier into a shot glas in that order. Better than B-52",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Kahlua", "Sambuca", "Grand Marnier"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/rwqxrv1461866023.jpg")
+puts "Created recipe: B-53"
+
+# Recipe 79
+Recipe.create(name: "Darkwood Sling",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "There are many good cherry liqueurs you can use, but I prefere Heering. Add one share of the liqueur. Then you add one share of Soda. For a sour sling use Tonic (most people prefer the drink without Tonic). Afterwards you fill the glass with Orange Juice and ice cubes.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Cherry Heering", "Soda water", "Orange juice", "Ice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/sxxsyq1472719303.jpg")
+puts "Created recipe: Darkwood Sling"
+
+# Recipe 80
+Recipe.create(name: "Black Russian",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour the ingredients into an old fashioned glass filled with ice cubes. Stir gently.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Coffee liqueur", "Vodka"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg"
+puts "Created recipe: Black Russian"
 
 sleep 1
 
