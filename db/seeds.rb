@@ -746,7 +746,7 @@ puts "Created recipe: Flaming Lamborghini"
 # Recipe 73
 Recipe.create(name: "Aztec Punch",
               event_type: ["Home", "Special Ocasion"],
-              instruction: "Mix all ingredients in a pitcher. Mix thoroughly and pour into whatever is available, the bigger the better! This drink packs a big punch, so don't over do it.",,
+              instruction: "Mix all ingredients in a pitcher. Mix thoroughly and pour into whatever is available, the bigger the better! This drink packs a big punch, so don't over do it.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Lemonade", "Vodka", "Rum", "Ginger ale"],
@@ -820,7 +820,7 @@ Recipe.create(name: "Black Russian",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Coffee liqueur", "Vodka"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg"
+              image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg")
 puts "Created recipe: Black Russian"
 
 sleep 1
