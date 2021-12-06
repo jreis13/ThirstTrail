@@ -822,6 +822,215 @@ Recipe.create(name: "Black Russian",
               ingredient: ["Coffee liqueur", "Vodka"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg")
 puts "Created recipe: Black Russian"
+# Recipe 80
+Recipe.create(name: "Black Russian",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour the ingredients into an old fashioned glass filled with ice cubes. Stir gently.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Coffee liqueur", "Vodka"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg")
+puts "Created recipe: Black Russian"
+
+# Recipe 81
+Recipe.create(name: "Manhattan",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Stirred over ice, strained into a chilled glass, garnished, and served up.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Sweet Vermouth", "Bourbon", "Angostura bitters", "Ice", "Maraschino cherry", "Orange peel"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yk70e31606771240.jpg")
+puts "Created recipe: Manhattan"
+
+# Recipe 82
+Recipe.create(name: "Mississippi Planters Punch",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients (except carbonated water) with ice and strain into a collins glass over ice cubes. Fill with carbonated water, stir, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Brandy", "Light rum", "Bourbon", "Lemon", "Powdered sugar", "Carbonated water"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/urpyqs1439907531.jpg")
+puts "Created recipe: Mississippi Planters Punch"
+
+# Recipe 83
+Recipe.create(name: "Miami Vice",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "First: Mix pina colada with 2.5 oz. of rum with ice(set aside). Second: Mix daiquiri with 2.5 oz. of rum with ice. Third: While frozen, add pina colda mix then daiquiri mix in glass (Making sure they do not get mixed together).",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["151 proof rum", "Pina colada mix", "Daiquiri mix"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/qvuyqw1441208955.jpg")
+puts "Created recipe: Miami Vice"
+
+# Recipe 84
+Recipe.create(name: "Citrus Coke",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour half of coke in a glass. Then add Bacardi and top it off with the remaining coke. Stir and drink up!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Bacardi Limon", "Coca-Cola"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uyrvut1479473214.jpg")
+puts "Created recipe: Citrus Coke"
+
+# Recipe 85
+Recipe.create(name: "English Rose Cocktail",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Rub rim of cocktail glass with lemon juice and dip rim of glass in powdered sugar. Shake all ingredients (except cherry) with ice and strain into sugar-rimmed glass. Top with the cherry and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Apricot brandy", "Gin", "Dry Vermouth", "Grenadine", "Lemon juice", "Cherry"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yxwrpp1441208697.jpg")
+puts "Created recipe: English Rose Cocktail"
+
+# Recipe 86
+Recipe.create(name: "Jack Rose Cocktail",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Apple brandy", "Grenadine", "Lime"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uuqqrv1439907068.jpg")
+puts "Created recipe: Jack Rose Cocktail"
+
+# Recipe 87
+Recipe.create(name: "Rum Punch",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Mix all ingredients in a punch bowl and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Ginger ale", "Fruit punch", "Orange juice", "Ice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/wyrsxu1441554538.jpg")
+puts "Created recipe: Rum Punch"
+
+# Recipe 88
+Recipe.create(name: "Apple Slammer",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "pour into a shot glass and present to consumer, they are expected to cover the top of the shotglass with thier palm, raise the glass, slam it on the bar and the swallow quickly.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["7-Up", "Apple schnapps"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/09yd5f1493069852.jpg")
+puts "Created recipe: Apple Slammer"
+
+# Recipe 89
+Recipe.create(name: "Apricot Punch",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour all ingrediants into a large punch bowl. Add ice and 4 oranges that are peeled and divided.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Apricot brandy", "Champagne", "Vodka", "7-Up", "Orange juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/tuxxtp1472668667.jpg")
+puts "Created recipe: Apricot Punch"
+
+# Recipe 90
+Recipe.create(name: "Dirty Nipple",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "This is a layered shot - the Bailey's must be on top",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Kahlua", "Sambuca", "Baileys irish cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vtyqrt1461866508.jpg")
+puts "Created recipe: Dirty Nipple"
+
+# Recipe 91
+Recipe.create(name: "Sidecar Cocktail",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Salty"],
+              ingredient: ["Brandy", "Triple sec", "Lemon"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/ewjxui1504820428.jpg")
+puts "Created recipe: Sidecar Cocktail"
+
+# Recipe 92
+Recipe.create(name: "Chocolate Milk",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Put the milk in the bottom, pour the Liquer on top and add the dash of amaretto. Do not mix. SLAM IT!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Chocolate liqueur", "Milk", "Amaretto"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/j6q35t1504889399.jpg")
+puts "Created recipe: Chocolate Milk"
+
+# Recipe 93
+Recipe.create(name: "Orange Whip",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Pour ingredients over ice and stir.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Orange juice", "Rum", "Vodka", "Cream", "Ice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/ttyrxr1454514759.jpg")
+puts "Created recipe: Orange Whip"
+
+# Recipe 94
+Recipe.create(name: "Almond Joy",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Amaretto", "Creme de Cacao", "Light cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/xutuqs1483388296.jpg")
+puts "Created recipe: Almond Joy"
+
+# Recipe 95
+Recipe.create(name: "Addison",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake together all the ingredients and strain into a cold glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Gin", "Vermouth"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yzva7x1504820300.jpg")
+puts "Created recipe: Addison"
+
+# Recipe 96
+Recipe.create(name: "Valencia Cocktail",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Apricot brandy", "Orange juice", "Orange bitters"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/9myuc11492975640.jpg")
+puts "Created recipe: Valencia Cocktail"
+
+# Recipe 97
+Recipe.create(name: "Halloween Punch",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Tip the cherry juice, orange peel, chilli, cinnamon sticks, cloves and ginger into a large saucepan. Simmer for 5 mins, then turn off the heat. Leave to cool, then chill for at least 4 hrs, or up to 2 days – the longer you leave it the more intense the flavours. If serving to young children, take the chilli out after a few hours. When you’re ready to serve, pour the juice into a jug. Serve in glass bottles or glasses and pop a straw in each. If you're adding vodka, do so at this stage. Dangle a fangs sweet from each glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Spicy"],
+              ingredient: ["Cherry Juice", "Orange Peel", "Red Chili Flakes", "Cloves", "Ginger", "Vodka"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/7hcgyj1571687671.jpg")
+puts "Created recipe: Halloween Punch"
+
+# Recipe 98
+Recipe.create(name: "Artillery",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Stir all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Sweet Vermouth", "Gin", "Bitters"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/g1vnbe1493067747.jpg")
+puts "Created recipe: Artillery"
+
+# Recipe 99
+Recipe.create(name: "Boulevardier",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Stir with ice, strain, garnish and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Campari", "Sweet Vermouth", "Rye whiskey", "Orange Peel"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/km84qi1513705868.jpg")
+puts "Created recipe: Boulevardier"
+
+# Recipe 100
+Recipe.create(name: "155 Belmont",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Blend with ice. Serve in a wine glass. Garnish with carrot.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Dark rum", "Light rum", "Vodka", "Orange juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg")
+puts "Created recipe: 155 Belmont"
 
 sleep 1
 
