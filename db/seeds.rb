@@ -1032,6 +1032,407 @@ Recipe.create(name: "155 Belmont",
               image_url: "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg")
 puts "Created recipe: 155 Belmont"
 
+# Recipe 101
+Recipe.create(name: "Kurant Tea",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour Absolut Kurant into a comfortably big tea-cup. Add the not too hot(!) apple tea and, if you like, some sugar. Enjoy!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Absolut Kurant", "Tea", "Sugar"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/xrsrpr1441247464.jpg")
+puts "Created recipe: Kurant Tea"
+
+# Recipe 102
+Recipe.create(name: "Creme de Menthe",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Bring sugar and water to a boil and simmer for 10 minutes. Cool. Add the remaining ingredients and stir. Cover and let ripen for 1 month.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Sugar", "Water", "Grain alcohol", "Peppermint extract", "Food coloring"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yxswtp1441253918.jpg")
+puts "Created recipe: Creme de Menthe"
+
+# Recipe 103
+Recipe.create(name:  "Kentucky Colonel",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "In a shaker half-filled with ice cubes combine the courbon and Benedictine. Shake and strain into a cocktail glass. Garnish with the lemon twist.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Bourbon", "Benedictine", "Lemon peel"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/utqwpu1478820348.jpg")
+puts "Created Kentucky Colonel"
+
+# Recipe 104
+Recipe.create(name: "Tom Collins",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar. Shake well. Strain into a collins glass alomst filled with ice cubes. Add the club soda. Stir and garnish with the cherry and the orange slice.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Lemon juice", "Sugar", "Club soda", "Maraschino cherry", "Orange"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/7cll921606854636.jpg")
+puts "Created recipe: Tom Collins"
+
+# Recipe 105
+Recipe.create(name: "Pink Gin",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour the bitters into a wine glass. Swirl the glass to coat the inside with the bitters, shake out the excess. Pour the gin into the glass. Do not add ice.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Bitters", "Gin"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/qyr51e1504888618.jpg")
+puts "Created recipe: Pink Gin"
+
+# Recipe 106
+Recipe.create(name: "Quick Sand",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Simply add the orange juice, quite a quick pour in order to mix the sambucca with the orange juice. The juice MUST have fruit pulp!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Black Sambuca", "Orange juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vprxqv1478963533.jpg")
+puts "Created recipe: Quick Sand"
+
+# Recipe 107
+Recipe.create(name: "The Galah",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Mix together the alcoholic portions and top with Pineapple and Lime juice.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Dark Rum", "Campari", "Creme De Banane", "Pineapple Juice", "Lime Juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/sy7y6r1614775067.jpg")
+puts "Created recipe: The Galah"
+
+# Recipe 108
+Recipe.create(name: "Kamikaze",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Shake all ingredients together with ice. Strain into glass, garnish and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Vodka", "Triple sec", "Lime juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/d7ff7u1606855412.jpg")
+puts "Created recipe: Kamikaze"
+
+# Recipe 109
+Recipe.create(name: "Side Car",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Blend with ice. Serve in a wine glass. Garnish with carrot.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Cognac", "Cointreau", "Lemon juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/x72sik1606854964.jpg")
+puts "Created recipe: Side Car"
+
+# Recipe 110
+Recipe.create(name: "Jello Shots"
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Boil 3 cups of water then add jello. Mix jello and water until jello is completely disolved. Add the two cups of vodka and mix together. Pour mixture into plastic shot glasses and chill until firm. Then, eat away...",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Vodka", "Jello", "Water"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/l0smzo1504884904.jpg")
+puts "Created recipe: Jello Shots"
+
+# Recipe 111
+Recipe.create(name: "Barracuda",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Rum", "Galliano", "Pineapple Juice", "Lime Juice", "Prosecco",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Dark rum", "Light rum", "Vodka", "Orange juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/jwmr1x1504372337.jpg")
+puts "Created recipe: Barracuda"
+
+# Recipe 112
+Recipe.create(name: "Scotch Sour",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake scotch, juice of lime, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with 1/2 slice lemon, top with the cherry, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Scotch", "Lime", "Powdered sugar", "Lemon","Cherry"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/0dnb6k1504890436.jpg")
+puts "Created recipe: Scotch Sour"
+
+# Recipe 113
+Recipe.create(name: "Gideon's Green Dinosaur",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Add all ingredients in collins glass with ice and stir.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Dark rum", "Vodka", "Triple sec", "Tequila", "Melon liqueur", "Mountain Dew"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/p5r0tr1503564636.jpg")
+puts "Created recipe: Gideon's Green Dinosaur"
+
+# Recipe 114
+Recipe.create(name: "Sex on the Beach",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Build all ingredients in a highball glass filled with ice. Garnish with orange slice.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Vodka", "Peach schnapps", "Cranberry juice", "Grapefruit juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/lijtw51551455287.jpg")
+puts "Created recipe: Sex on the Beach"
+
+# Recipe 115
+Recipe.create(name: "Martini",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Dry Vermouth", "Olive"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg")
+puts "Created recipe: Martini"
+
+# Recipe 116
+Recipe.create(name: "Angel Face",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice and strain contents into a cocktail glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Apricot brandy", "Apple brandy", "Gin"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vaukir1606772580.jpg")
+puts "Created recipe: Angel Face"
+
+# Recipe 117
+Recipe.create(name: "Amaretto Stinger",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake ingredients well with cracked ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Amaretto", "White Creme de Menthe"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vvop4w1493069934.jpg",)
+puts "Created recipe: Amaretto Stinger"
+
+# Recipe 118
+Recipe.create(name: "Sweet Bananas",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Place all ingredients in the blender jar - cover and whiz on medium speed until well blended. Pour in one tall, 2 medium or 3 small glasses and drink up.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Milk", "Banana", "Honey"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/sxpcj71487603345.jpg")
+puts "Created recipe: Sweet Bananas"
+
+# Recipe 119
+Recipe.create(name: "Baby Eskimo",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Leave ice-cream out for about 10 minutes. Add ingredients in order, stir with chopstick (butter knife or spoon works too). Consume immediately and often. Nice and light, great for following a heavy drink.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Kahlua", "Milk", "Vanilla ice-cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/wywrtw1472720227.jpg")
+puts "Created recipe: Baby Eskimo"
+
+# Recipe 120
+Recipe.create(name: "Grizzly Bear",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Served over ice. Sounds nasty, but tastes great.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Amaretto", "Jägermeister", "Kahlua", "Milk"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/k6v97f1487602550.jpg")
+puts "Created recipe: Grizzly Bear"
+
+# Recipe 121
+Recipe.create(name: "Passion Fruit Martini",,
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour all ingredients into a glass and stir. Garnish with half a passion fruit piece.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Vodka", "Sugar Syrup", "Passion fruit juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/6trfve1582473527.jpg")
+puts "Created recipe: Passion Fruit Martini"
+
+# Recipe 122
+Recipe.create(name: "Fruit Cooler",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Served over ice. Sounds nasty, but tastes great.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Apple juice", "Strawberries", "Sugar", "Lemon", "Apple", "Soda water", "Ice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/i3tfn31484430499.jpg")
+puts "Created recipe: Fruit Cooler"
+
+# Recipe 123
+Recipe.create(name: "Pink Penocha",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Mix all ingredients into bowl keep iced stir frequently",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Everclear", "Vodka", "Peach schnapps", "Orange juice", "Cranberry juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/6vigjx1503564007.jpg")
+puts "Created recipe: Pink Penocha"
+
+# Recipe 124
+Recipe.create(name: "Veteran",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Pour the rum and cherry brandy into an old-fashioned glass almost filled with ice cubes. Stir well.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Dark rum", "Cherry brandy"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/iwml9t1492976255.jpg")
+puts "Created recipe: Veteran"
+
+# Recipe 125
+Recipe.create(name: "Sherry Eggnog",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Shake sherry, powdered sugar, and egg with ice and strain into a collins glass. Fill with milk and stir. Sprinkle nutmeg on top and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Sherry", "Powdered sugar", "Egg", "Milk", "Nutmeg"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/xwrpsv1478820541.jpg")
+puts "Created recipe: Sherry Eggnog"
+
+# Recipe 126
+Recipe.create(name: "Egg Cream",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Mix syrup and milk in a fountain glass. Add soda water, serve with a straw.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Chocolate syrup", "Milk", "Soda water"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/mvis731484430445.jpg")
+puts "Created recipe: Egg Cream"
+
+# Recipe 127
+Recipe.create(name: "The Strange Weaver",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Mix ingredients slowly in a glass with ice, garnish with orange slice",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Light Rum", "Gin", "Sweet Vermouth", "Campari", "Lemon Juice", "Orgeat Syrup", "Orange Peel"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/opxjzh1604179528.jpg")
+puts "Created recipe: The Strange Weaver"
+
+# Recipe 128
+Recipe.create(name: "Apple Karate",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Place all ingredients in the blender jar - cover and whiz on medium speed until well blended. Pour in one tall, 2 medium or 3 small glasses and drink up.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Apple juice", "Carrot"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/syusvw1468876634.jpg")
+puts "Created recipe: Apple Karate"
+
+# Recipe 129
+Recipe.create(name: "Casa Blanca",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Light rum", "Triple sec", "Lime juice", "Maraschino liqueur"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/usspxq1441553762.jpg")
+puts "Created recipe: Casa Blanca"
+
+# Recipe 130
+Recipe.create(name: "Pineapple Paloma",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Rub the rim of each glass with lime slice and dip into salt. Add ice, tequila, grapefruit juice, lime juice and top with pineapple soda. Give it a quick stir. Garnish with fresh pineapple or lime.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Tequila", "Grapefruit Juice", "Fresh Lime Juice", "Pineapple Juice", "Lime", "Pepper"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/pg8iw31593351601.jpg")
+puts "Created recipe: Pineapple Paloma"
+
+# Recipe 131
+Recipe.create(name: "Bruised Heart",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Vodka", "Chambord raspberry liqueur", "Peachtree schnapps", "Cranberry juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/7if5kq1503564209.jpg")
+puts "Created recipe: Bruised Heart"
+
+# Recipe 132
+Recipe.create(name: "Absolut Evergreen",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Mix, pour over ice and top up with Bitter Lemon.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Absolut Citron", "Pisang Ambon", "Ice", "Bitter lemon"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/wrxrxp1472812609.jpg")
+puts "Created recipe: Absolut Evergreen"
+
+# Recipe 133
+Recipe.create(name: "Brainteaser",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Layered erin first, then sambuca and then avocart(should sit in middle of other two. To drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Sambuca", "Erin Cream", "Advocaat"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/ruywtq1461866066.jpg")
+puts "Created recipe: Brainteaser"
+
+# Recipe 134
+Recipe.create(name: "Microwave Hot Cocoa",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Combine sugar, cocoa, salt and hot water in 1-quart micro-proof measuring cup (or coffee mug). Microwave at HIGH (100%) for 1 to 1 1/2 minutes or until boiling. Add milk, sitr and microwave an additonal 1 1/2 to 2 minutes or until hot. Stir in vanilla, blend well.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Sugar", "Cocoa powder", "Salt", "Water", "Milk", "Vanilla extract"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/8y4x5f1487603151.jpg")
+puts "Created recipe: Microwave Hot Cocoa"
+
+# Recipe 135
+Recipe.create(name: "Tequila Slammer",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Mix carefully to avoid" ,
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Tequila", "7-up"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/43uhr51551451311.jpg")
+puts "Created recipe: Tequila Slammer"
+
+# Recipe 136
+Recipe.create(name: "1-900-FUK-MEUP",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Shake ingredients in a mixing tin filled with ice cubes. Strain into a rocks glass." ,
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Absolut Kurant", "Grand Marnier", "Chambord raspberry liqueur", "Midori melon liqueur", "Malibu rum", "Amaretto", "Cranberry juice", "Pineapple juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uxywyw1468877224.jpg")
+puts "Created recipe: Tequila Slammer"
+
+# Recipe 137
+Recipe.create(name: "Hunter's Moon",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Put the Bombay Sapphire, Martini Bianco, sugar syrup & blackberries in a cocktail shaker with lots of ice and shake vigorously before pouring into a balloon glass, topping up with lemonade and garnishing with a wedge of orange." ,
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: [ "Vermouth", "Maraschino Cherry", "Sugar Syrup", "Lemonade", "Blackberries"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/t0iugg1509556712.jpg")
+puts "Created recipe: Hunter's Moon"
+
+# Recipe 138
+Recipe.create(name: "Gin And Tonic",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Gin", "Tonic water", "Lime"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/z0omyp1582480573.jpg")
+puts "Created recipe: Tequila Slammer"
+
+# Recipe 139
+Recipe.create(name: "French Martini",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink." ,
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Vodka", "Raspberry Liqueur", "Pineapple Juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/clth721504373134.jpg")
+puts "Created recipe: French Martini"
+
+# Recipe 140
+Recipe.create(name: "Casino",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Pour all ingredients into shaker with ice cubes. Shake well. Strain into chilled cocktail glass. Garnish with a lemon twist and a maraschino cherry. Serve without a straw." ,
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Maraschino liqueur", "Lemon juice", "Orange bitters", "Cherry"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg")
+puts "Created recipe: Casino"
+
+
 sleep 1
 
 puts "All set, DB created!"
