@@ -1,0 +1,90 @@
+.form-check-label {
+  border: none !important;
+}
+
+// Alcholic
+
+.alcohol-choice :nth-child(3) .form-check-label {
+  background-image: asset-url("alcoholic.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Non-alcoholic
+
+.alcohol-choice :nth-child(4) .form-check-label {
+  background-image: asset-url("non-alcoholic.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Optional Alcohol
+
+.alcohol-choice :nth-child(5) .form-check-label {
+  background-color: black !important;
+}
+
+// Home
+
+.event-choice :nth-child(3) .form-check-label {
+  background-image: asset-url("home.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Business
+
+.event-choice :nth-child(4) .form-check-label {
+  background-image: asset-url("business.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Special Ocasion
+
+.event-choice :nth-child(5) .form-check-label {
+  background-image: asset-url("special-ocasion.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Fruity
+
+.category-choice :nth-child(3) .form-check-label {
+  background-image: asset-url("fruity.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Spicy
+
+.category-choice :nth-child(4) .form-check-label {
+  background-image: asset-url("spicy.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Salty
+
+.category-choice :nth-child(5) .form-check-label {
+  background-image: asset-url("salty.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+// Sour
+
+.category-choice :nth-child(6) .form-check-label {
+  background-image: asset-url("sour.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
