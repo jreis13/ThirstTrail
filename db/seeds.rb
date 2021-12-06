@@ -360,7 +360,7 @@ Recipe.create(name: "Blue Lagoon",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Vodka", "Blue coracao", "Lemonade", "Cherry"],
-              image_url: "https://www.liquor.com/thmb/u98GkkZ5MzQ9tD1zwWkfiOisLtQ=/720x720/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__07__12152657__blue-lagoon-720x720-recipe-647fb82bc3214de68e0eed9aed5afbfa.jpg")
+              image_url: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/blue-lagoon-f2fd71f.jpg?quality=90&resize=504,458")
 puts "Created recipe: Blue Lagoon"
 
 # Recipe 35
@@ -746,7 +746,7 @@ puts "Created recipe: Flaming Lamborghini"
 # Recipe 73
 Recipe.create(name: "Aztec Punch",
               event_type: ["Home", "Special Ocasion"],
-              instruction: "Mix all ingredients in a pitcher. Mix thoroughly and pour into whatever is available, the bigger the better! This drink packs a big punch, so don't over do it.",,
+              instruction: "Mix all ingredients in a pitcher. Mix thoroughly and pour into whatever is available, the bigger the better! This drink packs a big punch, so don't over do it.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Lemonade", "Vodka", "Rum", "Ginger ale"],
@@ -820,7 +820,7 @@ Recipe.create(name: "Black Russian",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Coffee liqueur", "Vodka"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg"
+              image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg")
 puts "Created recipe: Black Russian"
 
 sleep 1
