@@ -23,6 +23,7 @@ gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -30,6 +31,7 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'cloudinary', '~> 1.16.0'
 gem 'devise'
+gem 'rails_real_favicon'
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
@@ -37,7 +39,6 @@ gem 'simple_form'
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
-  gem 'rails_real_favicon'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
