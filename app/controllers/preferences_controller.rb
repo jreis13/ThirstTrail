@@ -49,7 +49,7 @@ class PreferencesController < ApplicationController
     else
       @cocktails = Cocktail.all
     end
- end
+  end
 
   private
 
