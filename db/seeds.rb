@@ -1123,7 +1123,7 @@ Recipe.create(name: "Side Car",
 puts "Created recipe: Side Car"
 
 # Recipe 110
-Recipe.create(name: "Jello Shots"
+Recipe.create(name: "Jello Shots",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Boil 3 cups of water then add jello. Mix jello and water until jello is completely disolved. Add the two cups of vodka and mix together. Pour mixture into plastic shot glasses and chill until firm. Then, eat away...",
               alcohol: "Alcoholic",
