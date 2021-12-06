@@ -130,7 +130,7 @@ Recipe.create(name: "Adam Bomb",
               alcohol: "Alcoholic",
               cocktail_category: ["Salty", "Fruity"],
               ingredient: ["Rum", "Vodka", "Tequila", "Triple sec", "Fruit", "Ice", "Salt", "Fruit juice"],
-              image_url: "https://images.unsplash.com/photo-1512103865222-dcf9531c9961?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
+              image_url: "https://bartendr.s3.us-west-2.amazonaws.com/images/Adam%20Bomb.jpg")
 puts "Created recipe: Adam Bomb"
 
 # Recipe 13
