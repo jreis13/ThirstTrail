@@ -12,15 +12,15 @@
             <p>Would you like alcohol on your cocktail?</p>
             <hr>
           </div>
-
-          <%= f.input :alcohol, as: :radio_buttons, collection: @alcohol,
-            input_html: { class: 'remove-button', data: {
-              action: 'click->preferences#preferenceSelected'
-            } },
-            wrapper_html: { class: 'questions-cards' },
-            label: '',
-            required: false %>
-
+            <div class="alcohol-choice">
+              <%= f.input :alcohol, as: :radio_buttons, collection: @alcohol,
+                input_html: { class: 'remove-button', data: {
+                  action: 'click->preferences#preferenceSelected'
+                } },
+                wrapper_html: { class: 'questions-cards' },
+                label: '',
+                required: false %>
+            </div>
           <p class='hint'>💡 Did you know? A non-alcoholic cocktail is called a mocktail or a virgin cocktail.</p>
         </div>
       </li>
@@ -30,15 +30,15 @@
             <p>What type of event are you organizing?</p>
             <hr>
           </div>
-            <%= f.input :event_type, as: :radio_buttons,
-              collection: @event_type, input_html: { class: 'remove-button'},
-              wrapper_html: { class: 'questions-cards' }, label: '', hint: '',
-              label_html: { class: 'selectable-card' },
-              required: false,
-              input_html: { class: 'remove-button', data: {
-                action: 'click->preferences#preferenceSelected'
-              } }
-              %>
+            <div class="event-choice">
+                <%= f.input :event_type, as: :radio_buttons, collection: @event_type,
+                input_html: { class: 'remove-button', data: {
+                  action: 'click->preferences#preferenceSelected'
+                } },
+                wrapper_html: { class: 'questions-cards' },
+                label: '',
+                required: false %>
+              </div>
           <p class='hint'>💡 Did you know? The first cocktail party was held in 1917.</p>
         </div>
       </li>
@@ -48,15 +48,16 @@
             <p>What kind of cocktail would you like?</p>
             <hr>
           </div>
-            <%= f.input :cocktail_category, as: :radio_buttons,
-              collection: @cocktail_category, input_html: { class: 'remove-button'},
-              wrapper_html: { class: 'questions-cards' }, label: '',
-              label_html: { class: 'selectable-card' },
-              required: false,
-              input_html: { class: 'remove-button', data: {
-                action: 'click->preferences#preferenceSelected'
-              } } %>
-          <p class='hint'>💡 Did you know? There are many cocktail types and categories (gladly, we made it simple for you).</p>
+            <div class="category-choice">
+                <%= f.input :cocktail_category, as: :radio_buttons, collection: @cocktail_category,
+                input_html: { class: 'remove-button', data: {
+                  action: 'click->preferences#preferenceSelected'
+                } },
+                wrapper_html: { class: 'questions-cards' },
+                label: '',
+                required: false %>
+              </div>
+          <p class='hint'>💡 Did you know? There are only 3 "official" cocktail categories according to the International Bartenders Association.</p>
         </div>
       </li>
       <li class="splide__slide">

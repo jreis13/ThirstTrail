@@ -130,7 +130,7 @@ Recipe.create(name: "Adam Bomb",
               alcohol: "Alcoholic",
               cocktail_category: ["Salty", "Fruity"],
               ingredient: ["Rum", "Vodka", "Tequila", "Triple sec", "Fruit", "Ice", "Salt", "Fruit juice"],
-              image_url: "https://images.unsplash.com/photo-1512103865222-dcf9531c9961?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
+              image_url: "https://bartendr.s3.us-west-2.amazonaws.com/images/Adam%20Bomb.jpg")
 puts "Created recipe: Adam Bomb"
 
 # Recipe 13
@@ -1432,6 +1432,15 @@ Recipe.create(name: "Casino",
               image_url: "https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg")
 puts "Created recipe: Casino"
 
+# Recipe 141
+Recipe.create(name: "Kyoto",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "In a cocktail shaker, muddle the mint leaves. Add ice and the gin, lime juice and passion fruit nectar and shake well. Strain into an ice-filled rocks glass and garnish with the mint sprig.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Mint leaves", "Ice", "Gin", "Lime juice", "Passion fruit juice"],
+              image_url: "https://static.onecms.io/wp-content/uploads/sites/9/2013/12/06/2010-xl-cocktail-kyoto-no-2.jpg")
+puts "Created recipe: Kyoto"
 
 sleep 1
 
