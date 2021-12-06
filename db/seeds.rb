@@ -535,7 +535,7 @@ puts "Created recipe: Chocolate Black Russian"
 
 # Recipe 52
 Recipe.create(name: "Screaming Orgasm",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
@@ -545,7 +545,7 @@ puts "Created recipe: Screaming Orgasm"
 
 # Recipe 53
 Recipe.create(name: "Almeria",
-              event_type: ["Home", "Special Ocasion"],
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
@@ -565,7 +565,7 @@ puts "Created recipe: Pysch Vitamin Light"
 
 # Recipe 55
 Recipe.create(name: "Big Red",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Pour ingredients into 1 ounce shot glass",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
@@ -636,7 +636,7 @@ puts "Created recipe: Blueberry Mojito"
 # Recipe 62
 Recipe.create(name: "Zoksel",
               event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "No specific mixinginstructions, just poor every ingredient in one glass. The lemon goes with it.",
+              instruction: "No specific mixing instructions, just pour every ingredient in one glass. The lemon goes with it.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
               ingredient: ["Beer", "Root beer", "Lemonade", "Coca-Cola", "7-Up", "Creme de Cassis", "Lemon",],
@@ -695,7 +695,7 @@ puts "Created recipe: Alice in Wonderland"
 
 # Recipe 68
 Recipe.create(name: "Alexander",
-              event_type: ["Home", "Special Ocasion"],
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
@@ -724,7 +724,7 @@ Recipe.create(name: "Queen Charlotte",
 puts "Created recipe: Queen Charlotte"
 
 # Recipe 71
-Recipe.create(name: "Golden dream",
+Recipe.create(name: "Golden Dream",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake with cracked ice. Strain into glass and serve.",
               alcohol: "Alcoholic",
@@ -748,15 +748,15 @@ Recipe.create(name: "Aztec Punch",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Mix all ingredients in a pitcher. Mix thoroughly and pour into whatever is available, the bigger the better! This drink packs a big punch, so don't over do it.",,
               alcohol: "Alcoholic",
-              cocktail_category: ["Fruity"],
+              cocktail_category: ["Sour"],
               ingredient: ["Lemonade", "Vodka", "Rum", "Ginger ale"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/uqwuyp1454514591.jpg")
 puts "Created recipe: Aztec Punch"
 
 # Recipe 74
 Recipe.create(name: "Jackhammer",
-              event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Serve over ice- Warning,Deadly!",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Serve over ice - Warning: Deadly!",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Jack Daniels","Amaretto"],
@@ -778,7 +778,7 @@ Recipe.create(name: "Classic Old-Fashioned",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "In an old-fashioned glass, muddle the bitters and water into the sugar cube, using the back of a teaspoon. Almost fill the glass with ice cubes and add the bourbon. Garnish with the orange slice and the cherry. Serve with a swizzle stick.",
               alcohol: "Alcoholic",
-              cocktail_category: ["Fruity"],
+              cocktail_category: ["Sour"],
               ingredient: ["Bitters", "Water", "Sugar", "Bourbon", "Orange", "Maraschino cherry"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/w8cxqv1582485254.jpg")
 puts "Created recipe: Classic Old-Fashioned"
@@ -788,7 +788,7 @@ Recipe.create(name: "Godchild",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake all ingredients well with cracked ice, strain into a champagne flute, and serve.",
               alcohol: "Alcoholic",
-              cocktail_category: ["Fruity"],
+              cocktail_category: ["Sour"],
               ingredient: ["Vodka", "Amaretto", "Heavy cream"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/m5nhtr1504820829.jpg")
 puts "Created recipe: Godchild"
