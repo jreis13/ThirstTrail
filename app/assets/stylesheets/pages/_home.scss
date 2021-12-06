@@ -35,7 +35,6 @@ body {
 .info-title {
   color: #000000;
   font-size: 21px;
-  text-align: center;
 }
 
 .info-details {
@@ -48,6 +47,7 @@ body {
 
 .home-card {
   padding: 15px 25px;
+    text-align: center !important;
 }
 
 .btn-home {
@@ -84,6 +84,26 @@ body {
   padding: 10px 28px;
   border-radius: 50px;
   font-weight: bolder;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  transition: none;
+    &:hover {
+      color: white;
+      background-color: #ff8e00;
+      opacity: 1;
+      transition: 0.5s;
+    }
+}
+
+.btn-ghost-team {
+  background-color: transparent;
+  color: #ff8e00;
+  border: 1px solid #ff8e00 ;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-weight: lighter;
   letter-spacing: 2px;
   opacity: 0.9;
   transition: none;
