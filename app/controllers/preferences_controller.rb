@@ -31,7 +31,7 @@ class PreferencesController < ApplicationController
   def show
     @preference = Preference.find(params[:id])
     @recipes = Recipe.where(alcohol: @preference.alcohol).where("? = ANY(event_type)", @preference.event_type).where("? = ANY(cocktail_category)", @preference.cocktail_category)
-    @recipes = @recipes.sample(4)
+    @recipes = @recipes.sample(3)
   end
 
   private
@@ -40,11 +40,10 @@ class PreferencesController < ApplicationController
     params.require(:preference).permit(:event_type, :alcohol, :cocktail_category)
   end
 
-
   # recipes = Recipe.where(alcohol: current_user.preferences.alcohol)
   # nsfw_filter = ["bad words"]
   # recipes = recipes.where(name != nsfw_filter)
-  def filter
-    results = Recipe.select(alcohol: @preference.alcohol, event_type: @preference.event_type, cocktail_category: @preference.cocktail_category)
-  end
+  # def filter
+  #   results = Recipe.select(alcohol: @preference.alcohol, event_type: @preference.event_type, cocktail_category: @preference.cocktail_category)
+  # end
 end
