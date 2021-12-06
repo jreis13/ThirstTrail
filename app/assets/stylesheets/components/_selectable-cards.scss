@@ -2,6 +2,10 @@
   border: none !important;
 }
 
+.form-check {
+  margin-bottom: 12px;
+}
+
 // Alcholic
 
 .alcohol-choice :nth-child(3) .form-check-label {
@@ -9,6 +13,7 @@
   background-size: 65px;
   background-position: bottom;
   background-repeat: no-repeat;
+  // margin-bottom: 50px;
 }
 
 // Non-alcoholic
@@ -18,12 +23,7 @@
   background-size: 65px;
   background-position: bottom;
   background-repeat: no-repeat;
-}
-
-// Optional Alcohol
-
-.alcohol-choice :nth-child(5) .form-check-label {
-  background-color: black !important;
+  // margin-bottom: 50px;
 }
 
 // Home
