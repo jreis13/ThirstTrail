@@ -64,6 +64,11 @@ ActiveRecord::Schema.define(version: 2021_12_06_155753) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "our_partners", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "our_teams", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
