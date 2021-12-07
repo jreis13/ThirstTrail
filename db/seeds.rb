@@ -1563,14 +1563,14 @@ Recipe.create(name: "Gin Daisy",
 puts "Created recipe: Gin Daisy"
 
 # Recipe 154
-Recipe.create(name: "Mango Mojito",
+Recipe.create(name: "Stone Sour",
               event_type: ["Home", "Special Ocasion"],
-              instruction: "Squeeze the juice from 1½ limes and blend with the mango to give a smooth purée. Cut the rest of the limes into quarters, and then cut each wedge in half again. Put 2 pieces of lime in a highball glass for each person and add 1 teaspoon of caster sugar and 5-6 mint leaves to each glass. Squish everything together with a muddler or the end of a rolling pin to release all the flavours from the lime and mint.\r\nDivide the mango purée between the glasses and add 30ml white rum and a handful of crushed ice to each one, stirring well to mix everything together. Top up with soda water to serve and garnish with extra mint, if you like.",
+              instruction: "Shake all ingredients with ice, strain into a chilled whiskey sour glass, and serve.",
               alcohol: "Alcoholic",
-              cocktail_category: ["Fruity"],
-              ingredient: ["Lime", "Mango", "Mint", "White Rum", "Ice", "Soda Water", "Mango"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/wfqmgm1630406820.jpg")
-puts "Created recipe: Mango Mojito"
+              cocktail_category: ["Sour"],
+              ingredient: ["Apricot brandy", "Orange juice", "Sweet and sour"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vruvtp1472719895.jpg")
+puts "Created recipe: Stone Sour"
 
 # Recipe 155
 Recipe.create(name: "Casino Royale",
