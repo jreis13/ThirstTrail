@@ -5,7 +5,6 @@
 
 .navbar-lewagon {
   display: flex;
-  justify-content: space-between;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -16,12 +15,6 @@
   width: 40px;
 }
 
-.burger {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .signers {
   display: flex;
 }
@@ -30,6 +23,7 @@
   color: #4A4A4A;
   text-decoration: none !important;
   margin-left: 1rem;
+  margin-top: 1.5px;
   font-size: 15px;
   margin-right: 1rem;
   font-weight: bolder;
@@ -42,7 +36,6 @@
 }
 
 .nav-item-sign-up {
-  // margin-right: 1rem;
   border: 1px solid #F98C22;
   padding: 2px 16px;
   border-radius: 50px;

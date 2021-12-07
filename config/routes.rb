@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/ourteam', to: 'pages#ourteam'
   get '/getstarted', to: 'pages#getstarted'
+  get '/roulette', to: 'pages#roulette'
   resources :preferences, only: [:index, :new, :create, :show]
   resources :recipes, only: [:index, :show]
 
