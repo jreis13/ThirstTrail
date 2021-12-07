@@ -1365,7 +1365,7 @@ puts "Created recipe: Microwave Hot Cocoa"
 # Recipe 134
 Recipe.create(name: "Tequila Slammer",
               event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Mix carefully to avoid" ,
+              instruction: "Mix carefully to avoid",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Tequila", "7-up"],
@@ -1431,6 +1431,106 @@ Recipe.create(name: "Kyoto",
               ingredient: ["Mint leaves", "Ice", "Gin", "Lime juice", "Passion fruit juice"],
               image_url: "https://static.onecms.io/wp-content/uploads/sites/9/2013/12/06/2010-xl-cocktail-kyoto-no-2.jpg")
 puts "Created recipe: Kyoto"
+
+# Recipe 141
+Recipe.create(name: "69 Special",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Pour 2 oz. gin. Add 4 oz. 7-up. Add Lemon Juice for flavor. If you are weak, top up glass with more 7-Up.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "7-Up", "Lemon juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/vqyxqx1472669095.jpg")
+puts "Created recipe: 69 Special"
+
+# Recipe 142
+Recipe.create(name: "3-Mile Long Island Iced Tea",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Fill 14oz glass with ice and alcohol. Fill 2/3 glass with cola and remainder with sweet & sour. Top with dash of bitters and lemon wedge.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Light rum", "Tequila", "Triple sec", "Vodka", "Coca-Cola", "Sweet and sour", "Bitters", "Lemon"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg")
+puts "Created recipe: 3-Mile Long Island Iced Tea"
+
+# Recipe 143
+Recipe.create(name: "The Last Word",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake with ice and strain into a cocktail glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Green Chartreuse", "Maraschino Liqueur", "Lime Juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/91oule1513702624.jpg")
+puts "Created recipe: The Last Word"
+
+# Recipe 144
+Recipe.create(name: "Gin Sling",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Dissolve powdered sugar in mixture of water and juice of lemon. Add gin. Pour into an old-fashioned glass over ice cubes and stir. Add the twist of orange peel and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Lemon", "Powdered sugar", "Water", "Orange peel"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/8cl9sm1582581761.jpg")
+puts "Created recipe: Gin Sling"
+
+# Recipe 145
+Recipe.create(name: "Amaretto Rose",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Pour amaretto and lime juice over ice in a collins glass. Fill with club soda and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Amaretto", "Lime juice", "Club soda"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/3jm41q1493069578.jpg")
+puts "Created recipe: Amaretto Rose"
+
+# Recipe 146
+Recipe.create(name: "Raspberry Julep",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Softly muddle the mint leaves and raspberry syrup in the bottom of the cup. Add crushed ice and Bourbon to the cup and then stir. Top with more ice, garnish with a mint sprig.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Bourbon", "Raspberry syrup", "Mint"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/hyztmx1598719265.jpg")
+puts "Created recipe: Raspberry Julep"
+
+# Recipe 147
+Recipe.create(name: "Jitterbug",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Wet glass, dip rim in sugar. Then add Ice. Then add everything else. It's that simple!",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Vodka", "Grenadine", "Lime juice", "Sugar", "Sugar syrup", "Soda water"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/wwqvrq1441245318.jpg")
+puts "Created recipe: Jitterbug"
+
+# Recipe 148
+Recipe.create(name: "24k Nightmare",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Add over ice,shake and pour.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Goldschlager", "Jägermeister", "Rumple Minze", "151 proof rum"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg")
+puts "Created recipe: 24k Nightmare"
+
+# Recipe 149
+Recipe.create(name: "Greyhound",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Add the vodka to a Collins glass filled with ice. Top with grapefruit juice and stir.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Vodka", "Grapefruit Juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/g5upn41513706732.jpg")
+puts "Created recipe: Greyhound"
+
+# Recipe 150
+Recipe.create(name: "Paradise",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake together over ice. Strain into cocktail glass and serve chilled.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Apricot Brandy", "Orange Juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg")
+puts "Created recipe: Paradise"
 
 sleep 1
 
