@@ -1693,33 +1693,36 @@ Recipe.create(name: "Strawberry Lemonade",
 puts "Created recipe: Strawberry Lemonade",
 
 # Recipe 167
-Recipe.create(name: "Banana Strawberry Shake Daiquiri",
+Recipe.create(name: "Rum Cooler",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Blend all together in a blender until smooth.",
-              alcohol: "Non-alcoholic",
+              alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
-              ingredient: ["Strawberries", "Banana", "Apple juice"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
-puts "Created recipe: Banana Strawberry Shake Daiquiri"
-# Recipe 159
-Recipe.create(name: "Banana Strawberry Shake Daiquiri",
+              ingredient: ["Rum", "Lemon-lime soda", "Lemon"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/2hgwsb1504888674.jpg")
+puts "Created recipe: Rum Cooler",
+
+# Recipe 168
+Recipe.create(name:  "Mai Tai",
               event_type: ["Home", "Special Ocasion"],
-              instruction: "Blend all together in a blender until smooth.",
-              alcohol: "Non-alcoholic",
+              instruction: "Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Light rum", "Orgeat syrup", "Triple sec", "Sweet and sour", "Cherry"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/twyrrp1439907470.jpg")
+puts "Created recipe: Mai Tai"
+
+# Recipe 169
+Recipe.create(name: "Lone Tree Cocktail",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Stir ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
-              ingredient: ["Strawberries", "Banana", "Apple juice"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
-puts "Created recipe: Banana Strawberry Shake Daiquiri"
-# Recipe 159
-Recipe.create(name: "Banana Strawberry Shake Daiquiri",
-              event_type: ["Home", "Special Ocasion"],
-              instruction: "Blend all together in a blender until smooth.",
-              alcohol: "Non-alcoholic",
-              cocktail_category: ["Fruity"],
-              ingredient: ["Strawberries", "Banana", "Apple juice"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
-puts "Created recipe: Banana Strawberry Shake Daiquiri"
-# Recipe 159
+              ingredient: ["Sweet Vermouth", "Gin"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/tsxpty1468923417.jpg")
+puts "Created recipe: Lone Tree Cokctail"
+
+# Recipe 170
 Recipe.create(name: "Banana Strawberry Shake Daiquiri",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Blend all together in a blender until smooth.",
