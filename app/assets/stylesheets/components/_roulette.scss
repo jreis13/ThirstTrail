@@ -11,8 +11,9 @@
       10s -webkit-filter cubic-bezier(0.1, 1, 0.8, 1);
     will-change: transform;
     border-radius: 50%;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.0);
     width: 100%;
+    left: 50%;
     max-width: 600px;
     /* border:4px dashed rgba(255,255,255, .5); */
   }
@@ -20,8 +21,8 @@
   .arrow {
     width: 0;
     height: 0;
-    border: 80px solid transparent;
-    border-top: 110px solid tomato;
+    border: 40px solid transparent;
+    border-top: 40px solid #F98C22;
     position: fixed;
     left: 50%;
     transform: translate(-50%, -100px);
