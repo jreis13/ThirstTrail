@@ -68,7 +68,7 @@
           </div>
           <div class="ingredient-choice">
             <%= f.input :ingredient, collection: @ingredients,
-            input_html: { class: 'select2' },
+            input_html: { multiple: true, class: 'js-example-basic-multiple' },
             required: false %>
           </div>
         </div>

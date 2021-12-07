@@ -54,7 +54,7 @@ class PreferencesController < ApplicationController
   private
 
   def preference_params
-    params.require(:preference).permit(:event_type, :alcohol, :cocktail_category, :ingredient)
+    params.require(:preference).permit(:event_type, :alcohol, :cocktail_category, ingredient: [])
   end
 
   # recipes = Recipe.where(alcohol: current_user.preferences.alcohol)
