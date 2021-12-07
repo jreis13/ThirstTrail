@@ -1174,7 +1174,7 @@ puts "Created recipe: Martini"
 
 # Recipe 115
 Recipe.create(name: "Angel Face",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Shake all ingredients with ice and strain contents into a cocktail glass.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1234,7 +1234,7 @@ puts "Created recipe: Passion Fruit Martini"
 
 # Recipe 121
 Recipe.create(name: "Fruit Cooler",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Served over ice. Sounds nasty, but tastes great.",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
@@ -1314,7 +1314,7 @@ puts "Created recipe: Casa Blanca"
 
 # Recipe 129
 Recipe.create(name: "Pineapple Paloma",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Rub the rim of each glass with lime slice and dip into salt. Add ice, tequila, grapefruit juice, lime juice and top with pineapple soda. Give it a quick stir. Garnish with fresh pineapple or lime.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1324,7 +1324,7 @@ puts "Created recipe: Pineapple Paloma"
 
 # Recipe 130
 Recipe.create(name: "Bruised Heart",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1334,7 +1334,7 @@ puts "Created recipe: Bruised Heart"
 
 # Recipe 131
 Recipe.create(name: "Absolut Evergreen",
-              event_type: ["Home", "Special Ocasion"],
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Mix, pour over ice and top up with Bitter Lemon.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1364,7 +1364,7 @@ puts "Created recipe: Microwave Hot Cocoa"
 
 # Recipe 134
 Recipe.create(name: "Tequila Slammer",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Mix carefully to avoid",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
@@ -1380,11 +1380,11 @@ Recipe.create(name: "1-900-FUK-MEUP",
               cocktail_category: ["Fruity"],
               ingredient: ["Absolut Kurant", "Grand Marnier", "Chambord raspberry liqueur", "Midori melon liqueur", "Malibu rum", "Amaretto", "Cranberry juice", "Pineapple juice"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/uxywyw1468877224.jpg")
-puts "Created recipe: Tequila Slammer"
+puts "Created recipe: 1-900-FUK-MEUP"
 
 # Recipe 136
 Recipe.create(name: "Hunter's Moon",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Put the Bombay Sapphire, Martini Bianco, sugar syrup & blackberries in a cocktail shaker with lots of ice and shake vigorously before pouring into a balloon glass, topping up with lemonade and garnishing with a wedge of orange." ,
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1393,14 +1393,14 @@ Recipe.create(name: "Hunter's Moon",
 puts "Created recipe: Hunter's Moon"
 
 # Recipe 137
-Recipe.create(name: "Gin And Tonic",
+Recipe.create(name: "Gin & Tonic",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               ingredient: ["Gin", "Tonic water", "Lime"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/z0omyp1582480573.jpg")
-puts "Created recipe: Tequila Slammer"
+puts "Created recipe: Gin & Tonic"
 
 # Recipe 138
 Recipe.create(name: "French Martini",
@@ -1454,7 +1454,7 @@ puts "Created recipe: 3-Mile Long Island Iced Tea"
 
 # Recipe 143
 Recipe.create(name: "The Last Word",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Shake with ice and strain into a cocktail glass.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1474,7 +1474,7 @@ puts "Created recipe: Gin Sling"
 
 # Recipe 145
 Recipe.create(name: "Amaretto Rose",
-              event_type: ["Home", "Special Ocasion"],
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour amaretto and lime juice over ice in a collins glass. Fill with club soda and serve.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1514,7 +1514,7 @@ puts "Created recipe: 24k Nightmare"
 
 # Recipe 149
 Recipe.create(name: "Greyhound",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Add the vodka to a Collins glass filled with ice. Top with grapefruit juice and stir.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1534,7 +1534,7 @@ puts "Created recipe: Paradise"
 
 # Recipe 151
 Recipe.create(name: "Jewel Of The Nile",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1594,7 +1594,7 @@ puts "Created recipe: A True Amaretto Sour"
 
 # Recipe 157
 Recipe.create(name: "Lazy Coconut Paloma",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Mix the coconut liqueur (preferably tequila) with the grapefruit juice and top with soda water. Garnish with a large grapefruit slice against the inside of the glass.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
@@ -1614,7 +1614,7 @@ puts "Created recipe: Aperol Spritz"
 
 # Recipe 159
 Recipe.create(name: "Banana Strawberry Shake Daiquiri",
-              event_type: ["Home", "Special Ocasion"],
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Blend all together in a blender until smooth.",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
@@ -1624,7 +1624,7 @@ puts "Created recipe: Banana Strawberry Shake Daiquiri"
 
 # Recipe 160
 Recipe.create(name: "Bahama Mama",
-              event_type: ["Home", "Business", "Special Ocasion"],
+              event_type: ["Home", "Special Ocasion"],
               instruction: "Add 2 parts club soda or more or less to taste. Mix it all together and pour over a bunch of ice. Drink with a straw.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
@@ -1673,24 +1673,24 @@ Recipe.create(name: "Dragonfly",
 puts "Created recipe: Dragonfly"
 
 # Recipe 165
-Recipe.create(name: "Amaretto And Cream",
+Recipe.create(name: "Amaretto & Cream",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake well with cracked ice, strain contents into a cocktail glass, and serve.",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
               ingredient: ["Amaretto", "Light cream"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/dj8n0r1504375018.jpg")
-puts "Created recipe: Amaretto And Cream"
+puts "Created recipe: Amaretto & Cream"
 
 # Recipe 166
 Recipe.create(name: "Strawberry Lemonade",
-              event_type: ["Home", "Special Ocasion"],
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Throw everything into a blender and mix until fairly smooth. Serve over ice.",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
               ingredient: ["Lemon", "Sugar", "Strawberries", "Water"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/spvvxp1468924425.jpg")
-puts "Created recipe: Strawberry Lemonade",
+puts "Created recipe: Strawberry Lemonade"
 
 # Recipe 167
 Recipe.create(name: "Rum Cooler",
@@ -1700,11 +1700,11 @@ Recipe.create(name: "Rum Cooler",
               cocktail_category: ["Fruity"],
               ingredient: ["Rum", "Lemon-lime soda", "Lemon"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/2hgwsb1504888674.jpg")
-puts "Created recipe: Rum Cooler",
+puts "Created recipe: Rum Cooler"
 
 # Recipe 168
-Recipe.create(name:  "Mai Tai",
-              event_type: ["Home", "Special Ocasion"],
+Recipe.create(name: "Mai Tai",
+              event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
@@ -1831,8 +1831,6 @@ Recipe.create(name: "Orgasm",
               ingredient: ["Creme de Cacao", "Amaretto", "Triple sec", "Vodka", "Light cream"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/vr6kle1504886114.jpg")
 puts "Created recipe: Orgasm"
-
-
 
 sleep 1
 
