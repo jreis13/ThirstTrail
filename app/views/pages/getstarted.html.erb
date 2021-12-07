@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="team-title">Hello <%= current_user.first_name %> <%= current_user.last_name %>, welcome to ThirstTrail!</h2>
+  <hr>
+  <div class="questions-container-start pb-1 start-bg">
+  <br>
+    <div class="btn-container">
+      <div class="btn-start-build">
+        <p class="info-title-start"><strong>ThirstTrail</strong> is all about <strong> your </strong> choice and helping you create recipes to your unique preferences.</p>
+        <p class="info-title-start">By using our cocktail builder you are able to narrow down to a selection of cocktails that will surely fit your taste.</p>
+        <%= link_to "Build a cocktail", new_preference_path, class: "btn btn-ghost-build" %>
+      </div>
+      <div class="btn-start-roulette">
+        <p class="info-details-luck">Feeling lucky? 🍀</p>
+        <p class="info-details-start">Try our <strong><%= link_to "cocktail roulette", new_preference_path, class: "roulette-link" %></strong>.</p>
+      </div>
+    </div>
+  </div>
+</div>
