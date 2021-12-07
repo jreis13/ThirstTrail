@@ -60,14 +60,17 @@
           <p class='hint'>💡 Did you know? There are only 3 "official" cocktail categories according to the International Bartenders Association.</p>
         </div>
       </li>
-       <li class="splide__slide">
-        <div class="questions-container" id="question-alcohol">
+      <li class="splide__slide">
+        <div class="questions-container" id="question-ingredient">
           <div class="question">
-            <p>Would you like alcohol on your cocktail?</p>
+            <p>Is there any ingredient you want in your cocktail?</p>
             <hr>
           </div>
-
-          <p class='hint'>💡 Did you know? A non-alcoholic cocktail is called a mocktail or a virgin cocktail.</p>
+          <div class="ingredient-choice">
+            <%= f.input :ingredient, collection: @ingredients,
+            input_html: { class: 'select2' },
+            required: false %>
+          </div>
         </div>
       </li>
 

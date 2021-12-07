@@ -1123,7 +1123,7 @@ Recipe.create(name: "Side Car",
 puts "Created recipe: Side Car"
 
 # Recipe 110
-Recipe.create(name: "Jello Shots"
+Recipe.create(name: "Jello Shots",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Boil 3 cups of water then add jello. Mix jello and water until jello is completely disolved. Add the two cups of vodka and mix together. Pour mixture into plastic shot glasses and chill until firm. Then, eat away...",
               alcohol: "Alcoholic",
@@ -1133,16 +1133,6 @@ Recipe.create(name: "Jello Shots"
 puts "Created recipe: Jello Shots"
 
 # Recipe 111
-Recipe.create(name: "Barracuda",
-              event_type: ["Home", "Special Ocasion"],
-              instruction: "Rum", "Galliano", "Pineapple Juice", "Lime Juice", "Prosecco",
-              alcohol: "Alcoholic",
-              cocktail_category: ["Fruity"],
-              ingredient: ["Dark rum", "Light rum", "Vodka", "Orange juice"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/jwmr1x1504372337.jpg")
-puts "Created recipe: Barracuda"
-
-# Recipe 112
 Recipe.create(name: "Scotch Sour",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake scotch, juice of lime, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with 1/2 slice lemon, top with the cherry, and serve.",
@@ -1152,7 +1142,7 @@ Recipe.create(name: "Scotch Sour",
               image_url: "https://www.thecocktaildb.com/images/media/drink/0dnb6k1504890436.jpg")
 puts "Created recipe: Scotch Sour"
 
-# Recipe 113
+# Recipe 112
 Recipe.create(name: "Gideon's Green Dinosaur",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Add all ingredients in collins glass with ice and stir.",
@@ -1162,7 +1152,7 @@ Recipe.create(name: "Gideon's Green Dinosaur",
               image_url: "https://www.thecocktaildb.com/images/media/drink/p5r0tr1503564636.jpg")
 puts "Created recipe: Gideon's Green Dinosaur"
 
-# Recipe 114
+# Recipe 113
 Recipe.create(name: "Sex on the Beach",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Build all ingredients in a highball glass filled with ice. Garnish with orange slice.",
@@ -1172,7 +1162,7 @@ Recipe.create(name: "Sex on the Beach",
               image_url: "https://www.thecocktaildb.com/images/media/drink/lijtw51551455287.jpg")
 puts "Created recipe: Sex on the Beach"
 
-# Recipe 115
+# Recipe 114
 Recipe.create(name: "Martini",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.",
@@ -1182,7 +1172,7 @@ Recipe.create(name: "Martini",
               image_url: "https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg")
 puts "Created recipe: Martini"
 
-# Recipe 116
+# Recipe 115
 Recipe.create(name: "Angel Face",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake all ingredients with ice and strain contents into a cocktail glass.",
@@ -1192,7 +1182,7 @@ Recipe.create(name: "Angel Face",
               image_url: "https://www.thecocktaildb.com/images/media/drink/vaukir1606772580.jpg")
 puts "Created recipe: Angel Face"
 
-# Recipe 117
+# Recipe 116
 Recipe.create(name: "Amaretto Stinger",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake ingredients well with cracked ice, strain into a cocktail glass, and serve.",
@@ -1202,7 +1192,7 @@ Recipe.create(name: "Amaretto Stinger",
               image_url: "https://www.thecocktaildb.com/images/media/drink/vvop4w1493069934.jpg",)
 puts "Created recipe: Amaretto Stinger"
 
-# Recipe 118
+# Recipe 117
 Recipe.create(name: "Sweet Bananas",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Place all ingredients in the blender jar - cover and whiz on medium speed until well blended. Pour in one tall, 2 medium or 3 small glasses and drink up.",
@@ -1212,7 +1202,7 @@ Recipe.create(name: "Sweet Bananas",
               image_url: "https://www.thecocktaildb.com/images/media/drink/sxpcj71487603345.jpg")
 puts "Created recipe: Sweet Bananas"
 
-# Recipe 119
+# Recipe 118
 Recipe.create(name: "Baby Eskimo",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Leave ice-cream out for about 10 minutes. Add ingredients in order, stir with chopstick (butter knife or spoon works too). Consume immediately and often. Nice and light, great for following a heavy drink.",
@@ -1222,7 +1212,7 @@ Recipe.create(name: "Baby Eskimo",
               image_url: "https://www.thecocktaildb.com/images/media/drink/wywrtw1472720227.jpg")
 puts "Created recipe: Baby Eskimo"
 
-# Recipe 120
+# Recipe 119
 Recipe.create(name: "Grizzly Bear",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Served over ice. Sounds nasty, but tastes great.",
@@ -1232,8 +1222,8 @@ Recipe.create(name: "Grizzly Bear",
               image_url: "https://www.thecocktaildb.com/images/media/drink/k6v97f1487602550.jpg")
 puts "Created recipe: Grizzly Bear"
 
-# Recipe 121
-Recipe.create(name: "Passion Fruit Martini",,
+# Recipe 120
+Recipe.create(name: "Passion Fruit Martini",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour all ingredients into a glass and stir. Garnish with half a passion fruit piece.",
               alcohol: "Alcoholic",
@@ -1242,7 +1232,7 @@ Recipe.create(name: "Passion Fruit Martini",,
               image_url: "https://www.thecocktaildb.com/images/media/drink/6trfve1582473527.jpg")
 puts "Created recipe: Passion Fruit Martini"
 
-# Recipe 122
+# Recipe 121
 Recipe.create(name: "Fruit Cooler",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Served over ice. Sounds nasty, but tastes great.",
@@ -1252,7 +1242,7 @@ Recipe.create(name: "Fruit Cooler",
               image_url: "https://www.thecocktaildb.com/images/media/drink/i3tfn31484430499.jpg")
 puts "Created recipe: Fruit Cooler"
 
-# Recipe 123
+# Recipe 122
 Recipe.create(name: "Pink Penocha",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Mix all ingredients into bowl keep iced stir frequently",
@@ -1262,7 +1252,7 @@ Recipe.create(name: "Pink Penocha",
               image_url: "https://www.thecocktaildb.com/images/media/drink/6vigjx1503564007.jpg")
 puts "Created recipe: Pink Penocha"
 
-# Recipe 124
+# Recipe 123
 Recipe.create(name: "Veteran",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Pour the rum and cherry brandy into an old-fashioned glass almost filled with ice cubes. Stir well.",
@@ -1272,7 +1262,7 @@ Recipe.create(name: "Veteran",
               image_url: "https://www.thecocktaildb.com/images/media/drink/iwml9t1492976255.jpg")
 puts "Created recipe: Veteran"
 
-# Recipe 125
+# Recipe 124
 Recipe.create(name: "Sherry Eggnog",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Shake sherry, powdered sugar, and egg with ice and strain into a collins glass. Fill with milk and stir. Sprinkle nutmeg on top and serve.",
@@ -1282,7 +1272,7 @@ Recipe.create(name: "Sherry Eggnog",
               image_url: "https://www.thecocktaildb.com/images/media/drink/xwrpsv1478820541.jpg")
 puts "Created recipe: Sherry Eggnog"
 
-# Recipe 126
+# Recipe 125
 Recipe.create(name: "Egg Cream",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Mix syrup and milk in a fountain glass. Add soda water, serve with a straw.",
@@ -1292,7 +1282,7 @@ Recipe.create(name: "Egg Cream",
               image_url: "https://www.thecocktaildb.com/images/media/drink/mvis731484430445.jpg")
 puts "Created recipe: Egg Cream"
 
-# Recipe 127
+# Recipe 126
 Recipe.create(name: "The Strange Weaver",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Mix ingredients slowly in a glass with ice, garnish with orange slice",
@@ -1302,7 +1292,7 @@ Recipe.create(name: "The Strange Weaver",
               image_url: "https://www.thecocktaildb.com/images/media/drink/opxjzh1604179528.jpg")
 puts "Created recipe: The Strange Weaver"
 
-# Recipe 128
+# Recipe 127
 Recipe.create(name: "Apple Karate",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Place all ingredients in the blender jar - cover and whiz on medium speed until well blended. Pour in one tall, 2 medium or 3 small glasses and drink up.",
@@ -1312,7 +1302,7 @@ Recipe.create(name: "Apple Karate",
               image_url: "https://www.thecocktaildb.com/images/media/drink/syusvw1468876634.jpg")
 puts "Created recipe: Apple Karate"
 
-# Recipe 129
+# Recipe 128
 Recipe.create(name: "Casa Blanca",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
@@ -1322,7 +1312,7 @@ Recipe.create(name: "Casa Blanca",
               image_url: "https://www.thecocktaildb.com/images/media/drink/usspxq1441553762.jpg")
 puts "Created recipe: Casa Blanca"
 
-# Recipe 130
+# Recipe 129
 Recipe.create(name: "Pineapple Paloma",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Rub the rim of each glass with lime slice and dip into salt. Add ice, tequila, grapefruit juice, lime juice and top with pineapple soda. Give it a quick stir. Garnish with fresh pineapple or lime.",
@@ -1332,7 +1322,7 @@ Recipe.create(name: "Pineapple Paloma",
               image_url: "https://www.thecocktaildb.com/images/media/drink/pg8iw31593351601.jpg")
 puts "Created recipe: Pineapple Paloma"
 
-# Recipe 131
+# Recipe 130
 Recipe.create(name: "Bruised Heart",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass",
@@ -1342,7 +1332,7 @@ Recipe.create(name: "Bruised Heart",
               image_url: "https://www.thecocktaildb.com/images/media/drink/7if5kq1503564209.jpg")
 puts "Created recipe: Bruised Heart"
 
-# Recipe 132
+# Recipe 131
 Recipe.create(name: "Absolut Evergreen",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Mix, pour over ice and top up with Bitter Lemon.",
@@ -1352,7 +1342,7 @@ Recipe.create(name: "Absolut Evergreen",
               image_url: "https://www.thecocktaildb.com/images/media/drink/wrxrxp1472812609.jpg")
 puts "Created recipe: Absolut Evergreen"
 
-# Recipe 133
+# Recipe 132
 Recipe.create(name: "Brainteaser",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Layered erin first, then sambuca and then avocart(should sit in middle of other two. To drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw.",
@@ -1362,7 +1352,7 @@ Recipe.create(name: "Brainteaser",
               image_url: "https://www.thecocktaildb.com/images/media/drink/ruywtq1461866066.jpg")
 puts "Created recipe: Brainteaser"
 
-# Recipe 134
+# Recipe 133
 Recipe.create(name: "Microwave Hot Cocoa",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Combine sugar, cocoa, salt and hot water in 1-quart micro-proof measuring cup (or coffee mug). Microwave at HIGH (100%) for 1 to 1 1/2 minutes or until boiling. Add milk, sitr and microwave an additonal 1 1/2 to 2 minutes or until hot. Stir in vanilla, blend well.",
@@ -1372,7 +1362,7 @@ Recipe.create(name: "Microwave Hot Cocoa",
               image_url: "https://www.thecocktaildb.com/images/media/drink/8y4x5f1487603151.jpg")
 puts "Created recipe: Microwave Hot Cocoa"
 
-# Recipe 135
+# Recipe 134
 Recipe.create(name: "Tequila Slammer",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Mix carefully to avoid" ,
@@ -1382,7 +1372,7 @@ Recipe.create(name: "Tequila Slammer",
               image_url: "https://www.thecocktaildb.com/images/media/drink/43uhr51551451311.jpg")
 puts "Created recipe: Tequila Slammer"
 
-# Recipe 136
+# Recipe 135
 Recipe.create(name: "1-900-FUK-MEUP",
               event_type: ["Home", "Special Ocasion"],
               instruction: "Shake ingredients in a mixing tin filled with ice cubes. Strain into a rocks glass." ,
@@ -1392,7 +1382,7 @@ Recipe.create(name: "1-900-FUK-MEUP",
               image_url: "https://www.thecocktaildb.com/images/media/drink/uxywyw1468877224.jpg")
 puts "Created recipe: Tequila Slammer"
 
-# Recipe 137
+# Recipe 136
 Recipe.create(name: "Hunter's Moon",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Put the Bombay Sapphire, Martini Bianco, sugar syrup & blackberries in a cocktail shaker with lots of ice and shake vigorously before pouring into a balloon glass, topping up with lemonade and garnishing with a wedge of orange." ,
@@ -1402,7 +1392,7 @@ Recipe.create(name: "Hunter's Moon",
               image_url: "https://www.thecocktaildb.com/images/media/drink/t0iugg1509556712.jpg")
 puts "Created recipe: Hunter's Moon"
 
-# Recipe 138
+# Recipe 137
 Recipe.create(name: "Gin And Tonic",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge.",
@@ -1412,7 +1402,7 @@ Recipe.create(name: "Gin And Tonic",
               image_url: "https://www.thecocktaildb.com/images/media/drink/z0omyp1582480573.jpg")
 puts "Created recipe: Tequila Slammer"
 
-# Recipe 139
+# Recipe 138
 Recipe.create(name: "French Martini",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink." ,
@@ -1422,7 +1412,7 @@ Recipe.create(name: "French Martini",
               image_url: "https://www.thecocktaildb.com/images/media/drink/clth721504373134.jpg")
 puts "Created recipe: French Martini"
 
-# Recipe 140
+# Recipe 139
 Recipe.create(name: "Casino",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour all ingredients into shaker with ice cubes. Shake well. Strain into chilled cocktail glass. Garnish with a lemon twist and a maraschino cherry. Serve without a straw." ,
@@ -1432,7 +1422,7 @@ Recipe.create(name: "Casino",
               image_url: "https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg")
 puts "Created recipe: Casino"
 
-# Recipe 141
+# Recipe 140
 Recipe.create(name: "Kyoto",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "In a cocktail shaker, muddle the mint leaves. Add ice and the gin, lime juice and passion fruit nectar and shake well. Strain into an ice-filled rocks glass and garnish with the mint sprig.",
