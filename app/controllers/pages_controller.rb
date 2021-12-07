@@ -5,5 +5,6 @@ class PagesController < ApplicationController
   end
 
   def roulette
+    @recipe = Recipe.all.sample
   end
 end

@@ -7,6 +7,7 @@ const roulette = () => {
   $(".wheel img").css("transform", "rotate(" + currentLength + "deg)");
 
   const button = document.querySelector(".spin");
+  const randomButton = document.querySelector('.random-recipe')
   button.addEventListener("click", () => {
     //$(".wheel img").css("filter", "blur(8px)");
 
@@ -19,6 +20,7 @@ const roulette = () => {
 
     setTimeout(function () {
       $(".wheel img").css("filter", "blur(0px)");
+      randomButton.classList.remove('d-none');
     }, numofsecs);
   });
 
