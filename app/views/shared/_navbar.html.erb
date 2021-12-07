@@ -1,20 +1,18 @@
 <div class="navbar navbar-light navbar-lewagon">
-  <%= link_to root_path, class: "navbar-brand" do %>
-    <%= image_tag 'logo-new-1-c.png', style: 'height:9vh; width:auto; margin-left: 15px' %>
-  <% end %>
-
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag 'logo-new-1-c.png', style: 'height:9vh; width:auto; margin-left: 15px' %>
+    <% end %>
   <div id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto align-items-end">
       <% if user_signed_in? %>
-        <li class="nav-item dropdown">
           <% if current_user.photo.key.nil? %>
             <%= image_tag "default_avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <% else %>
             <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <% end %>
+        <li class="nav-item dropdown">
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li> <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </li>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </ul>
         </li>
       <% else %>
