@@ -3,5 +3,6 @@ class AddPreferencesToRecipes < ActiveRecord::Migration[6.1]
     add_column :recipes, :event_type, :string, array: true
     add_column :recipes, :cocktail_category, :string, array: true
     add_column :recipes, :alcohol, :string
+    add_column :recipes, :ingredient, :string, array: true
   end
 end
