@@ -1532,6 +1532,106 @@ Recipe.create(name: "Paradise",
               image_url: "https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg")
 puts "Created recipe: Paradise"
 
+# Recipe 151
+Recipe.create(name: "Jewel Of The Nile",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Green Chartreuse", "Yellow Chartreuse"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/hx4nrb1504884947.jpg")
+puts "Created recipe: Jewel Of The Nile"
+
+# Recipe 152
+Recipe.create(name: "The Laverstoke",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "1) Squeeze two lime wedges into a balloon glass then add the cordial, Bombay Sapphire and MARTINI Rosso Vermouth, swirl to mix. 2) Fully fill the glass with cubed ice and stir to chill. 3) Top with Fever-Tree Ginger Ale and gently stir again to combine. 4) Garnish with a snapped ginger slice and an awoken mint sprig.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Elderflower cordial", "Rosso Vermouth", "Tonic Water", "Lime", "Ginger", "Mint"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/6xfj5t1517748412.jpg")
+puts "Created recipe: The Laverstoke"
+
+# Recipe 153
+Recipe.create(name: "Gin Daisy",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "In a shaker half-filled with ice cubes, combine the gin, lemon juice, sugar, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the cherry and the orange slice.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Lemon juice", "Sugar", "Grenadine", "Maraschino cherry", "Orange"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/z6e22f1582581155.jpg")
+puts "Created recipe: Gin Daisy"
+
+# Recipe 154
+Recipe.create(name: "Mango Mojito",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Squeeze the juice from 1½ limes and blend with the mango to give a smooth purée. Cut the rest of the limes into quarters, and then cut each wedge in half again. Put 2 pieces of lime in a highball glass for each person and add 1 teaspoon of caster sugar and 5-6 mint leaves to each glass. Squish everything together with a muddler or the end of a rolling pin to release all the flavours from the lime and mint.\r\nDivide the mango purée between the glasses and add 30ml white rum and a handful of crushed ice to each one, stirring well to mix everything together. Top up with soda water to serve and garnish with extra mint, if you like.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Lime", "Mango", "Mint", "White Rum", "Ice", "Soda Water", "Mango"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/wfqmgm1630406820.jpg")
+puts "Created recipe: Mango Mojito"
+
+# Recipe 155
+Recipe.create(name: "Casino Royale",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a sour glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Lemon juice", "Maraschino liqueur", "Orange bitters", "Egg yolk"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/3qpv121504366699.jpg")
+puts "Created recipe: Casino Royale"
+
+# Recipe 156
+Recipe.create(name: "A True Amaretto Sour",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Rub the rim of an old fashioned glass with lemon, and dip repeatedly into granulated sugar until it has a good frosted rim. Shake a jigger of Amaretto with the juice of 1/2 a lemon. Strain into glass and add ice. Garnish with a Marachino Cherry.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Amaretto", "Lemon", "Ice", "Maraschino cherry"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/rptuxy1472669372.jpg")
+puts "Created recipe: A True Amaretto Sour"
+
+# Recipe 157
+Recipe.create(name: "Lazy Coconut Paloma",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Mix the coconut liqueur (preferably tequila) with the grapefruit juice and top with soda water. Garnish with a large grapefruit slice against the inside of the glass.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Coconut Liqueur", "Grapefruit Juice", "Soda Water"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/rytuex1598719770.jpg")
+puts "Created recipe: Lazy Coconut Palma"
+
+# Recipe 158
+Recipe.create(name: "Aperol Spritz",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Put a couple of cubes of ice into 2 glasses and add a 50 ml measure of Aperol to each. Divide the prosecco between the glasses and then top up with soda, if you like.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Aperol", "Prosecco", "Soda Water"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/iloasq1587661955.jpg")
+puts "Created recipe: Aperol Spritz"
+
+# Recipe 159
+Recipe.create(name: "Banana Strawberry Shake Daiquiri",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Blend all together in a blender until smooth.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Strawberries", "Banana", "Apple juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
+puts "Created recipe: Banana Strawberry Shake Daiquiri"
+
+# Recipe 160
+Recipe.create(name: "Bahama Mama",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Add 2 parts club soda or more or less to taste. Mix it all together and pour over a bunch of ice. Drink with a straw.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Rum", "Dark Rum", "Banana liqueur", "Grenadine", "Pineapple Juice", "Orange Juice", "Sweet and Sour"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg")
+puts "Created recipe: Bahama Mama"
+
 sleep 1
 
 puts "All set, DB created!"
