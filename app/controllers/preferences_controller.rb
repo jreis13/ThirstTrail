@@ -37,7 +37,10 @@ class PreferencesController < ApplicationController
 
   def show
     @preference = Preference.find(params[:id])
-    @recipes = Recipe.where(alcohol: @preference.alcohol).where("? = ANY(event_type)", @preference.event_type).where("? = ANY(cocktail_category)", @preference.cocktail_category).where("? = ANY(ingredient)", @preference.ingredient)
+    @recipes = Recipe.where(alcohol: @preference.alcohol)
+    @recipes = @recipes.where("? = ANY(event_type)", @preference.event_type)
+    @recipes = @recipes.where("? = ANY(cocktail_category)", @preference.cocktail_category)
+    @recipes = @recipes.where("? = ANY(ingredient)", @preference.ingredients)
     @recipes = @recipes.sample(3)
 
   end
@@ -54,7 +57,8 @@ class PreferencesController < ApplicationController
   private
 
   def preference_params
-    params.require(:preference).permit(:event_type, :alcohol, :cocktail_category, ingredient: [])
+    params.require(:preference).permit(:event_type, :alcohol, :cocktail_category, ingredients: [])
+    # params[:ingredient] = params[:ingredient].split(",").map{|a| a.gsub(/[^a-z0-9\s]/i, '').strip}
   end
 
   # recipes = Recipe.where(alcohol: current_user.preferences.alcohol)
