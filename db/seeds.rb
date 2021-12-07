@@ -1632,6 +1632,105 @@ Recipe.create(name: "Bahama Mama",
               image_url: "https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg")
 puts "Created recipe: Bahama Mama"
 
+# Recipe 161
+Recipe.create(name: "Clover Club",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Dry shake ingredients to emulsify, add ice, shake and served straight up.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Gin", "Grenadine", "Lemon", "Egg white"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/t0aja61504348715.jpg")
+puts "Created recipe: Clover Club"
+
+# Recipe 162
+Recipe.create(name: "Quaker's Cocktail",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Light rum", "Brandy", "Lemon", "Raspberry syrup"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg")
+puts "Created recipe: Quaker´s Cocktail"
+
+# Recipe 163
+Recipe.create(name: "Flying Dutchman",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "In an old-fashioned glass almost filled with ice cubes, combine the gin and triple sec. Stir well.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Sour"],
+              ingredient: ["Gin", "Triple sec"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/mwko4q1582482903.jpg")
+puts "Created recipe: Flying Dutchman"
+
+# Recipe 164
+Recipe.create(name: "Dragonfly",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "In a highball glass almost filled with ice cubes, combine the gin and ginger ale. Stir well. Garnish with the lime wedge.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Gin", "Ginger ale", "Lime"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uc63bh1582483589.jpg")
+puts "Created recipe: Dragonfly"
+
+# Recipe 165
+Recipe.create(name: "Amaretto And Cream",
+              event_type: ["Home", "Business", "Special Ocasion"],
+              instruction: "Shake well with cracked ice, strain contents into a cocktail glass, and serve.",
+              alcohol: "Alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Amaretto", "Light cream"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/dj8n0r1504375018.jpg")
+puts "Created recipe: Amaretto And Cream"
+
+# Recipe 166
+Recipe.create(name: "Strawberry Lemonade",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Throw everything into a blender and mix until fairly smooth. Serve over ice.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Lemon", "Sugar", "Strawberries", "Water"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/spvvxp1468924425.jpg")
+puts "Created recipe: Strawberry Lemonade",
+
+# Recipe 167
+Recipe.create(name: "Banana Strawberry Shake Daiquiri",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Blend all together in a blender until smooth.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Strawberries", "Banana", "Apple juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
+puts "Created recipe: Banana Strawberry Shake Daiquiri"
+# Recipe 159
+Recipe.create(name: "Banana Strawberry Shake Daiquiri",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Blend all together in a blender until smooth.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Strawberries", "Banana", "Apple juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
+puts "Created recipe: Banana Strawberry Shake Daiquiri"
+# Recipe 159
+Recipe.create(name: "Banana Strawberry Shake Daiquiri",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Blend all together in a blender until smooth.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Strawberries", "Banana", "Apple juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
+puts "Created recipe: Banana Strawberry Shake Daiquiri"
+# Recipe 159
+Recipe.create(name: "Banana Strawberry Shake Daiquiri",
+              event_type: ["Home", "Special Ocasion"],
+              instruction: "Blend all together in a blender until smooth.",
+              alcohol: "Non-alcoholic",
+              cocktail_category: ["Fruity"],
+              ingredient: ["Strawberries", "Banana", "Apple juice"],
+              image_url: "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg")
+puts "Created recipe: Banana Strawberry Shake Daiquiri"
+
+
+
 sleep 1
 
 puts "All set, DB created!"
