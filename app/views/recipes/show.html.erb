@@ -11,7 +11,6 @@
           <hr>
           <p class="ingredient-list">Ingredients:</p>
           <div class="font-size-ingredient"><%= @recipe.ingredient.join(" • ").gsub(/("|\[|\])/, "") %></div>
-          <div class="font-size-ingredient"><%= @recipe.measure.join(" • ").gsub(/("|\[|\])/, "") %></div>
           <hr>
           <p class="instructions">How to make it:</p>
           <div class="font-size-instruction"><%= @recipe.instruction %></div>
