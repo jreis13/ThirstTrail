@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get '/ourteam', to: 'pages#ourteam'
   get '/getstarted', to: 'pages#getstarted'
   get '/roulette', to: 'pages#roulette'
+  get '/404', to: 'errors#not_found'
+  get '/500', to: 'errors#internal_server'
+  get '/422', to: 'errors#unprocessable'
   resources :preferences, only: [:index, :new, :create, :show]
   resources :recipes, only: [:index, :show]
 
