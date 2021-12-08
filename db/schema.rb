@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_07_155100) do
+ActiveRecord::Schema.define(version: 2021_12_08_112438) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,14 +74,32 @@ ActiveRecord::Schema.define(version: 2021_12_07_155100) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "preference_ingredients", force: :cascade do |t|
+    t.bigint "preference_id", null: false
+    t.bigint "ingredient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["ingredient_id"], name: "index_preference_ingredients_on_ingredient_id"
+    t.index ["preference_id"], name: "index_preference_ingredients_on_preference_id"
+  end
+
   create_table "preferences", force: :cascade do |t|
     t.string "event_type"
-    t.string "daytime"
     t.string "cocktail_category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "alcohol"
-    t.text "ingredients", default: [], array: true
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_preferences_on_user_id"
+  end
+
+  create_table "recipe_ingredients", force: :cascade do |t|
+    t.bigint "recipe_id", null: false
+    t.bigint "ingredient_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["ingredient_id"], name: "index_recipe_ingredients_on_ingredient_id"
+    t.index ["recipe_id"], name: "index_recipe_ingredients_on_recipe_id"
   end
 
   create_table "recipes", force: :cascade do |t|
@@ -93,7 +111,6 @@ ActiveRecord::Schema.define(version: 2021_12_07_155100) do
     t.string "event_type", array: true
     t.string "cocktail_category", array: true
     t.string "alcohol"
-    t.string "ingredient", array: true
   end
 
   create_table "user_recipes", force: :cascade do |t|
@@ -122,6 +139,11 @@ ActiveRecord::Schema.define(version: 2021_12_07_155100) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "preference_ingredients", "ingredients"
+  add_foreign_key "preference_ingredients", "preferences"
+  add_foreign_key "preferences", "users"
+  add_foreign_key "recipe_ingredients", "ingredients"
+  add_foreign_key "recipe_ingredients", "recipes"
   add_foreign_key "user_recipes", "recipes"
   add_foreign_key "user_recipes", "users"
 end
