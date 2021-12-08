@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="team-title">Your recipe was successfully created.</h2>
+  <h2 class="team-title">Your cocktail choice for the event!</h2>
   <hr>
   <div class="questions-container">
       <div class="row">
@@ -7,7 +7,6 @@
           <p class="instructions">Your cocktail choice was:</p>
           <h2 class="recipe-title"><%= @recipe.name %></h2>
           <div class="card card-recipe-show" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=@recipe.image_url%>); background-size: cover" >
-          <%= render "favorite", recipe: @recipe %>
           </div>
           <hr>
           <p class="ingredient-list">Ingredients:</p>
