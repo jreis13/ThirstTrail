@@ -1,68 +1,93 @@
-.card-text {
-  font-size: 20px;
-  line-height: 20px !important;
-  font-weight: 500
-}
+.main {
+     width: 70vw;
+     height: 90vh;
+     background: inherit;
+     padding: 1vw;
+     margin: auto;
+     position: relative;
+     top: 5vh
+ }
 
-.small {
-  letter-spacing: 0.5px !important
-}
-.review-title {
-  font-weight: 300
-}
+ .body {
+     background-color: black;
+     animation-name: background;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+     animation-delay: 2s;
+     font-family: 'Abel', sans-serif
+ }
 
-.container-how {
-  padding: 30px 30px 0;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  text-align: center;
-  font-size: 24px;
-  max-width: 450px;
-  min-height: 80vh;
-  margin: 20px 15px;
-}
+ .img-nice {
+     width: 20vw;
+     height: auto;
+     transform: rotateY(360deg);
+     animation-name: photo;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+     animation-delay: 1s
+ }
 
-.card-header {
-  min-height: 11rem;
-  background: #ffffff;
-}
+ .test1 {
+     background-color: rgba(255, 255, 255, 0);
+     height: 10vw;
+     padding: 1vw;
+     animation-name: text;
+     animation-duration: 1s;
+     animation-fill-mode: forwards
+ }
 
-.img-1 {
-  position: relative;
-  object-fit: cover;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  top: -127px !important;
-  box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.1)
-}
+ @keyframes text {
+     from {
+         width: 0%;
+         font-size: 0vw
+     }
 
-.quotes {
-  position: relative;
-  top: -90px
-}
+     to {
+         width: 45vw;
+         font-size: 1.2vw
+     }
+ }
 
-.quotes-img {
-  widows: 50px;
-  width: 30px;
-  height: auto;
-  padding-bottom: 10px;
-}
+ @keyframes photo {
+     from {
+         transform: rotateY(180deg)
+     }
 
-.carousel-indicators li {
-  cursor: pointer;
-  border-radius: 50% !important;
-  width: 10px;
-  height: 10px;
-  opacity: 0.5;
-  margin: 0 15px 18px 15px;
-  color: #ffffff;
-  background-color: #F98C22 !important;
-  top: -10px;
-  position: relative
-}
+     to {
+         transform: rotateY(360deg)
+     }
+ }
 
-.carousel-inner {
-  border-radius: 0px !important
-}
+ @keyframes background {
+     from {
+         background-color: black
+     }
+
+     to {
+         background-color: #29b6f6
+     }
+ }
+
+//  .by {
+//      font-family: 'Dancing Script', cursive
+//  }
+
+ @media only screen and (max-width: 425px) {
+     .main {
+         width: 100vw;
+         padding: 3vw;
+         height: auto
+     }
+
+     img {
+         height: 30vw;
+         width: 30vw;
+         margin: 5vw
+     }
+
+     .test1 {
+         height: 45vw;
+         padding: 3vw;
+         font-size: auto
+     }
+ }
