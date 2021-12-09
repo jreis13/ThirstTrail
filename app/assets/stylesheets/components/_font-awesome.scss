@@ -1,5 +1,5 @@
 .fa-github {
-  margin-top: 10px;
+  margin-top: 0px;
   font-size: 20px;
   color: black;
   opacity: 0.7;
@@ -11,4 +11,34 @@
 .fa-external-link-alt {
   margin-left: 10px;
   color: #888888;
+}
+
+.fa-instagram {
+  margin-top: 0px;
+  font-size: 20px;
+  color: black;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.fa-facebook {
+  margin-top: 0px;
+  font-size: 20px;
+  color: black;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.fa-linkedin {
+  margin-top: 0px;
+  font-size: 20px;
+  color: black;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
 }
