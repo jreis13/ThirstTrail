@@ -7,7 +7,7 @@
           <div class="col-12 col-md-6">
           <%= link_to recipe_path(recipe) do %>
             <div class="card card-recipe mx-auto" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=recipe.image_url%>); background-size: cover" >
-              <h2 class="card-recipe-title"><%= recipe.name %></h2>
+              <h2 class="card-recipe-title-choices"><%= recipe.name %></h2>
             </div>
             <% end %>
           </div>
@@ -15,11 +15,13 @@
         <div class="no-result">
           <% if @recipes.empty? %>
             <%= image_tag("cat.webp", size: "300x300", alt: "No result") %>
+              <p class="no-result-text">Sorry, looks like there is no such recipe!</p>
+            <div class="btns-start-no-result">
+              <%= link_to "Start over", new_preference_path, class: "btn btn-ghost-build" %>
+              <p class="info-details-luck-result">Feeling lucky? 🍀</p>
+              <p class="info-details-show">Try our <strong><%= link_to "cocktail roulette", roulette_path, class: "roulette-link" %></strong>.</p>
+            </div>
           <% end %>
-          <p class="no-result-text">Sorry, looks like there is no such recipe!</p>
-        <div class="btns-start-no-result">
-        <%= link_to "Start over", new_preference_path, class: "btn btn-ghost-build" %>
-      </div>
         </div>
     </div>
     <div class="preference-opt">
