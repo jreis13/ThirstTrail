@@ -7,7 +7,7 @@
           <p class="instructions">Your cocktail choice was:</p>
           <h2 class="recipe-title"><%= @recipe.name %></h2>
           <div class="card card-recipe-show" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=@recipe.image_url%>); background-size: cover" >
-          <%= render "favorite", recipe: @recipe %>
+          <%# <%= render "favorite", recipe: @recipe %>
           </div>
           <hr>
           <p class="ingredient-list">Ingredients:</p>
