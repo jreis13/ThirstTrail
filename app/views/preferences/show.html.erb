@@ -12,6 +12,15 @@
             <% end %>
           </div>
         <%end%>
+        <div class="no-result">
+          <% if @recipes.empty? %>
+            <%= image_tag("cat.webp", size: "300x300", alt: "No result") %>
+          <% end %>
+          <p class="no-result-text">Sorry, looks like there is no such recipe!</p>
+        <div class="btns-start-no-result">
+        <%= link_to "Start over", new_preference_path, class: "btn btn-ghost-build" %>
+      </div>
+        </div>
     </div>
     <div class="preference-opt">
       <%= link_to new_preference_path do %>

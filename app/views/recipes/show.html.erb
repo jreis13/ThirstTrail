@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="team-title">Recipe was created!</h2>
+  <h2 class="team-title">Your recipe was successfully created.</h2>
   <hr>
   <div class="questions-container">
       <div class="row">
@@ -7,12 +7,13 @@
           <p class="instructions">Your cocktail choice was:</p>
           <h2 class="recipe-title"><%= @recipe.name %></h2>
           <div class="card card-recipe-show" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=@recipe.image_url%>); background-size: cover" >
+          <%= render "favorite", recipe: @recipe %>
           </div>
           <hr>
           <p class="ingredient-list">Ingredients:</p>
 
           <div class="font-size-ingredient">
-            <ul>
+            <ul class="bullets">
               <% @recipe.ingredients.each do |ingredient| %>
                 <li><%= RecipeIngredient.find_by(recipe: @recipe, ingredient: ingredient).measure %> <%= ingredient.name %></li>
               <% end %>
@@ -24,17 +25,10 @@
         </div>
         <hr>
       </div>
-      <% if current_user.favorited?(@recipe) %>
-        <div class="btn-recipe-show">
-        <%= link_to "Selection!", selection_recipes_path, class: "btn btn-ghost-recipe" %>
-      </div>
-      <% end %>
     <div class="btn-recipe-show">
       <%= link_to "Mix again!", new_preference_path, class: "btn btn-ghost-recipe" %>
     </div>
-      <div class="btns-show">
-        <p class="info-details-luck">Feeling lucky? 🍀</p>
-        <p class="info-details-show">Try our <strong><%= link_to "cocktail roulette", roulette_path, class: "roulette-link" %></strong>.</p>
-      </div>
+      <p class="info-details-luck">Feeling lucky? 🍀</p>
+      <p class="info-details-show">Try our <strong><%= link_to "cocktail roulette", roulette_path, class: "roulette-link" %></strong>.</p>
   </div>
 </div>
