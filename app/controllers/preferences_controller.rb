@@ -34,9 +34,9 @@ class PreferencesController < ApplicationController
     @recipes = Recipe.where(alcohol: @preference.alcohol)
     @recipes = @recipes.where("? = ANY(event_type)", @preference.event_type)
     @recipes = @recipes.where("? = ANY(cocktail_category)", @preference.cocktail_category)
+    @recipes_results = get_recipes_results(@recipes,@preference)
     # Intersect recipes_results with recipes
-    @recipes_results = get_recipes_results(@preference)
-    @recipes = @recipes.sample(3)
+    @recipes = @recipes_results.sample(3)
   end
 
   def filter
@@ -54,15 +54,18 @@ class PreferencesController < ApplicationController
     params.require(:preference).permit(:event_type, :alcohol, :cocktail_category, ingredient_ids: [])
   end
 
-  def get_recipes_results(preference)
+  def get_recipes_results(recipes,preference)
       recipes_results = []
-      preference.ingredients.each do |ingredient|
-       RecipeIngredient.where(ingredient: ingredient).each do |result|
-        recipes_results << result.recipe
-       end
-    end
+        preference.ingredients.each do |ingredient|
+          recipes.each do |recipe|
+            recipe.recipe_ingredients.each do |recipe_ingredient|
+              recipes_results << recipe_ingredient.recipe if recipe_ingredient.ingredient == ingredient
+            end
+          end
+        end
     recipes_results
   end
+
 
   # recipes = Recipe.where(alcohol: current_user.preferences.alcohol)
   # nsfw_filter = ["bad words"]
