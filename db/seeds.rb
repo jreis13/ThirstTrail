@@ -67,18 +67,6 @@ ingredients.each do |ingredient|
   RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
 end
 
-# Recipe 4
-recipe = Recipe.create(name: "Tequila Surprise",
-              event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Fill shot glass with Tequila. Add drops of Tobasco sauce.",
-              alcohol: "Alcoholic",
-              cocktail_category: ["Spicy"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/8189p51504735581.jpg")
-ingredients = ["Tequila", "Tabasco sauce"]
-ingredients.each do |ingredient|
-  RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
-end
-
 # Recipe 5
 recipe = Recipe.create(name: "Horse's Neck",
               event_type: ["Home", "Special Ocasion"],
@@ -189,13 +177,13 @@ ingredients.each do |ingredient|
 end
 
 # Recipe 14
-recipe = Recipe.create(name: "Pineapple Ginger-Ale Smoothie",
+recipe = Recipe.create(name: "Pineapple Gingerale Smoothie",
 event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Throw everything into a blender and liquify.",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/eg9i1d1487603469.jpg")
-              ingredients = ["Ginger ale", "Pineapple"]
+              ingredients = ["Ginger", "Pineapple"]
               ingredients.each do |ingredient|
   RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
 end
@@ -279,7 +267,7 @@ recipe = Recipe.create(name: "Vampiro",
               alcohol: "Alcoholic",
               cocktail_category: ["Salty"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/yfhn371504374246.jpg")
-              ingredients = ["Tequila", "Blue Curacao", "Lime juice", "Salt"]
+              ingredients = ["Tequila", "Tomato Juice", "Orange Juice", "Lime juice", "Sugar Syrup", "Salt"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -315,7 +303,7 @@ recipe = Recipe.create(name: "Downshift",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/y36z8c1503563911.jpg")
-              ingredients = ["Fruit punch", "Sprite", "Tequila", "White rum"]
+              ingredients = ["Fruit punch", "Sprite", "Tequila", "151 proof rum"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -327,7 +315,7 @@ recipe = Recipe.create(name: "Fruit Flip-Flop",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/y36z8c1503563911.jpg")
-              ingredients = ["Yogurt", "Fruit juice"]
+              ingredients = ["Yoghurt", "Fruit juice"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -340,30 +328,6 @@ recipe = Recipe.create(name: "Bellini Martini",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/3h9wv51504389379.jpg")
               ingredients = ["Ice", "Vodka", "Peach nectar", "Peach schnapps", "Lemon peel"]
-              ingredients.each do |ingredient|
-                RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
-              end
-
-# Recipe 26
-recipe = Recipe.create(name: "Mango Lassi",
-              event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Put it all in a blender and pour over crushed ice. You can also use other fruits like strawberries and bananas.",
-              alcohol: "Non-alcoholic",
-              cocktail_category: ["Fruity"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/1bw6sd1487603816.jpg")
-              ingredients = ["Mango", "Yogurt", "Sugar", "Water"]
-              ingredients.each do |ingredient|
-                RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
-              end
-
-# Recipe 27
-recipe = Recipe.create(name: "Lemon Vodka Summertime",
-              event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Add all ingredients except lemon to shaker filled with ice. Cover and shake vigorously. Strain contents into ice filled collins glass. Garnish with lemon.",
-              alcohol: "Alcoholic",
-              cocktail_category: ["Sour"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/trpxxs1472669662.jpg")
-              ingredients = ["Lemon flavored vodka", "Sweet and sour", "Sprite", "Soda water", "Lemon"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -447,7 +411,7 @@ recipe = Recipe.create(name: "Blue Lagoon",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               image_url: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/blue-lagoon-f2fd71f.jpg?quality=90&resize=504,458")
-              ingredients = ["Vodka", "Blue coracao", "Lemonade", "Cherry"]
+              ingredients = ["Vodka", "Blue Curacao", "Lemonade", "Cherry"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -500,17 +464,6 @@ recipe = Recipe.create(name: "San Francisco",
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
 
-# Recipe 39
-recipe = Recipe.create(name: "Grape, Lemon and Pineapple Smoothie",
-              event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Throw everything into a blender and liquify.",
-              alcohol: "Non-alcoholic",
-              cocktail_category: ["Fruity"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/54z5h71487603583.jpg")
-              ingredients = ["Grapes", "Lemon", "Pineapple"]
-              ingredients.each do |ingredient|
-                RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
-              end
 
 # Recipe 40
 recipe = Recipe.create(name: "Lemon Elderflower Spritzer",
@@ -543,7 +496,7 @@ recipe = Recipe.create(name: "Rum Runner",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/vqws6t1504888857.jpg")
-              ingredients = ["Rum", "Blackberry brandy", "Orange juice", "Pineapple juice", "Cranberry juice"]
+              ingredients = ["Malibu rum", "Blackberry brandy", "Orange juice", "Pineapple juice", "Cranberry juice"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -555,7 +508,7 @@ recipe = Recipe.create(name: "Ipanema",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/yswuwp1469090992.jpg")
-              ingredients = ["Lime", "Brown sugar", "Passion fruit juice", "Ginger ale", "Ice"]
+              ingredients = ["Cachaca", "Lemon Juice", "Agave Syrup", "Champagne"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -627,19 +580,7 @@ recipe = Recipe.create(name: "Banana Strawberry Shake",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/vqquwx1472720634.jpg")
-              ingredients = ["Strawberries", "Banana", "Yogurt", "Milk", "Honey"]
-              ingredients.each do |ingredient|
-                RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
-              end
-
-# Recipe 50
-recipe = Recipe.create(name: "Citrus Vodka Killer",
-              event_type: ["Home", "Special Ocasion"],
-              instruction: "Just shake it and you're good to go.",
-              alcohol: "Alcoholic",
-              cocktail_category: ["Fruity"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/yvxrwv1472669728.jpg")
-              ingredients = ["Vodka lemon", "Orange juice", "Triple sec", "Ginger ale"]
+              ingredients = ["Strawberries", "Banana", "Yoghurt", "Milk", "Honey"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -736,18 +677,6 @@ recipe = Recipe.create(name: "Port Wine Cocktail",
               cocktail_category: ["Sour"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/qruprq1441553976.jpg")
               ingredients = ["Port", "Brandy"]
-              ingredients.each do |ingredient|
-                RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
-              end
-
-# Recipe 59
-recipe = Recipe.create(name: "Zenmeister",
-              event_type: ["Home", "Business", "Special OOcasion"],
-              instruction: "Mix together and enjoy",
-              alcohol: "Alcoholic",
-              cocktail_category: ["Sour"],
-              image_url: "https://www.thecocktaildb.com/images/media/drink/qyuvsu1479209462.jpg")
-              ingredients = ["Jägermeister", "Root beer"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -1094,7 +1023,7 @@ recipe = Recipe.create(name: "Rum Punch",
               alcohol: "Alcoholic",
               cocktail_category: ["Fruity"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/wyrsxu1441554538.jpg")
-              ingredients = ["Ginger ale", "Fruit punch", "Orange juice", "Ice"]
+              ingredients = ["Rum", "Ginger ale", "Fruit punch", "Orange juice", "Ice"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
@@ -1254,8 +1183,8 @@ recipe = Recipe.create(name: "155 Belmont",
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end
-
-=begin # Recipe 101
+=begin
+ # Recipe 101
 Recipe.create(name: "Kurant Tea",
               event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Pour Absolut Kurant into a comfortably big tea-cup. Add the not too hot(!) apple tea and, if you like, some sugar. Enjoy!",
@@ -1858,21 +1787,28 @@ puts "Created recipe: Bahama Mama"
 
 =end
 
-=begin
+puts "Adding measures to Recipes"
 recipes = Recipe.all
 recipes.each do |recipe|
+  puts recipe.id
   name = recipe.name
-  # find recipe name in API (query API) and store ingredient quantities
-  # api_results = {"vodka": "12 ml"}
-  ingredients = RecipeIngredient.where(recipe: recipe)
-  ingredients.each do |ingredient|
-    # api_results = {"vodka": "12 ml"}
-    ingredient.measure = api_results[ingredient]
-    ingredient.save
+  url = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=#{name}"
+  response = HTTParty.get(url)
+
+  drink = response["drinks"].first
+  drink.each do |key, value|
+    if key.include?("Ingredient") && value != nil && value != ""
+      ingredient = Ingredient.find_by_name(value.downcase)
+      recipe_ingredient = RecipeIngredient.find_by(recipe: recipe, ingredient: ingredient)
+      ingredient_index = key.match(/\d+/)[0]
+      measure_key = "strMeasure#{ingredient_index}"
+      recipe_ingredient.measure = drink[measure_key]
+      recipe_ingredient.save
+    end
   end
 end
 
-=end
+
 
 sleep 1
 puts "All set, DB created!"
