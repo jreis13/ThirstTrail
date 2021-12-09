@@ -8,6 +8,12 @@ class PreferencesController < ApplicationController
     @cocktail_category = ["Fruity", "Spicy", "Salty", "Sour"]
     @ingredients = Ingredient.all
     @preference = Preference.new
+    mixer_urls = ["https://i.giphy.com/media/pGfeUzUo5MYAptZOQO/giphy.webp",
+                  "https://i.giphy.com/media/3o7TKDhgKC52OZhV0k/giphy.webp",
+                  "https://i.giphy.com/media/m6vr46wnVUjjG/giphy.webp",
+                  "https://i.giphy.com/media/l49JIgBhX4X6hyCGY/giphy.webp",
+                  "https://i.giphy.com/media/J2a7ClzF1YfclNcfe5/giphy.webp"]
+    @mixer_image = mixer_urls.sample
   end
 
   def create
@@ -16,10 +22,10 @@ class PreferencesController < ApplicationController
     if @preference.save
       redirect_to @preference
     elsif @preference.alcohol.empty?
-      flash[:alert] = 'Starting over: Please tell us if you want alcohol on your cocktail.'
+      flash[:alert] = 'Starting over: Please tell us if you want alcohol in your cocktail.'
       redirect_to new_preference_path(anchor: 'question-alcohol')
     elsif @preference.event_type.empty?
-      flash[:alert] = 'Starting over: Please tell us which kind of event are you hosting.'
+      flash[:alert] = 'Starting over: Please tell us which kind of event you are hosting.'
       redirect_to new_preference_path(anchor: 'question-alcohol')
     elsif @preference.cocktail_category.empty?
       flash[:alert] = 'Starting over: Please tell us your cocktail taste preference.'

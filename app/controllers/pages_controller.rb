@@ -3,4 +3,8 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def roulette
+    @recipe = Recipe.all.sample
+  end
 end

@@ -44,8 +44,6 @@
 .questions-container {
   padding: 30px 30px 0;
   background: #FFFFFF;
-  //mix-blend-mode: normal;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   text-align: center;
   font-size: 24px;
@@ -63,10 +61,6 @@
   justify-content: center;
 }
 
-.fa-arrow-alt-circle-right, .fa-arrow-alt-circle-left {
-  color: #F98C22;
-  font-size: 30px;
-}
 
 .btn-recipe {
   background-color: #ff8e00;

@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_12_09_121836) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -53,6 +54,33 @@ ActiveRecord::Schema.define(version: 2021_12_09_121836) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "favorites", force: :cascade do |t|
+    t.string "favoritable_type", null: false
+    t.bigint "favoritable_id", null: false
+    t.string "favoritor_type", null: false
+    t.bigint "favoritor_id", null: false
+    t.string "scope", default: "favorite", null: false
+    t.boolean "blocked", default: false, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["blocked"], name: "index_favorites_on_blocked"
+    t.index ["favoritable_id", "favoritable_type"], name: "fk_favoritables"
+    t.index ["favoritable_type", "favoritable_id", "favoritor_type", "favoritor_id", "scope"], name: "uniq_favorites__and_favoritables", unique: true
+    t.index ["favoritable_type", "favoritable_id"], name: "index_favorites_on_favoritable"
+    t.index ["favoritor_id", "favoritor_type"], name: "fk_favorites"
+    t.index ["favoritor_type", "favoritor_id"], name: "index_favorites_on_favoritor"
+    t.index ["scope"], name: "index_favorites_on_scope"
+  end
+
+  create_table "favourites", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "recipe_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["recipe_id"], name: "index_favourites_on_recipe_id"
+    t.index ["user_id"], name: "index_favourites_on_user_id"
+  end
+
   create_table "how_it_works", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -90,6 +118,7 @@ ActiveRecord::Schema.define(version: 2021_12_09_121836) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "alcohol"
     t.bigint "user_id", null: false
+    t.string "ingredient"
     t.index ["user_id"], name: "index_preferences_on_user_id"
   end
 
@@ -140,6 +169,8 @@ ActiveRecord::Schema.define(version: 2021_12_09_121836) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "favourites", "recipes"
+  add_foreign_key "favourites", "users"
   add_foreign_key "preference_ingredients", "ingredients"
   add_foreign_key "preference_ingredients", "preferences"
   add_foreign_key "preferences", "users"

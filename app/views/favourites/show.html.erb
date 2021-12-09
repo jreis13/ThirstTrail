@@ -1,0 +1,26 @@
+<div class="container">
+  <h2 class="team-title">Your cocktail choice for the event!</h2>
+  <hr>
+  <div class="questions-container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="instructions">Your cocktail choice was:</p>
+          <h2 class="recipe-title"><%= @recipe.name %></h2>
+          <div class="card card-recipe-show" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=@recipe.image_url%>); background-size: cover" >
+          </div>
+          <hr>
+          <p class="ingredient-list">Ingredients:</p>
+          <div class="font-size-ingredient"><%= @recipe.ingredient.join(" • ").gsub(/("|\[|\])/, "") %></div>
+          <hr>
+          <p class="instructions">How to make it:</p>
+          <div class="font-size-instruction"><%= @recipe.instruction %></div>
+        </div>
+        <hr>
+      </div>
+    <div class="btn-recipe-show">
+      <%= link_to "Mix again!", new_preference_path, class: "btn btn-ghost-recipe" %>
+    </div>
+      <p class="info-details-luck">Feeling lucky? 🍀</p>
+      <p class="info-details-show">Try our <strong><%= link_to "cocktail roulette", roulette_path, class: "roulette-link" %></strong>.</p>
+  </div>
+</div>

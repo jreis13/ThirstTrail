@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Recipe was created!</h2>
+  <h2 class="team-title">Recipe was created!</h2>
   <hr>
   <div class="questions-container">
       <div class="row">
@@ -10,6 +10,7 @@
           </div>
           <hr>
           <p class="ingredient-list">Ingredients:</p>
+
           <div class="font-size-ingredient">
             <ul>
               <% @recipe.ingredients.each do |ingredient| %>
@@ -17,15 +18,23 @@
               <% end %>
             </ul>
           </div>
-                <%# raise %>
           <hr>
           <p class="instructions">How to make it:</p>
           <div class="font-size-instruction"><%= @recipe.instruction %></div>
         </div>
         <hr>
       </div>
+      <% if current_user.favorited?(@recipe) %>
+        <div class="btn-recipe-show">
+        <%= link_to "Selection!", selection_recipes_path, class: "btn btn-ghost-recipe" %>
+      </div>
+      <% end %>
     <div class="btn-recipe-show">
       <%= link_to "Mix again!", new_preference_path, class: "btn btn-ghost-recipe" %>
     </div>
+      <div class="btns-show">
+        <p class="info-details-luck">Feeling lucky? 🍀</p>
+        <p class="info-details-show">Try our <strong><%= link_to "cocktail roulette", roulette_path, class: "roulette-link" %></strong>.</p>
+      </div>
   </div>
 </div>
