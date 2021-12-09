@@ -8,6 +8,12 @@ class PreferencesController < ApplicationController
     @cocktail_category = ["Fruity", "Spicy", "Salty", "Sour"]
     @ingredients = Ingredient.all
     @preference = Preference.new
+    mixer_urls = ["https://i.giphy.com/media/pGfeUzUo5MYAptZOQO/giphy.webp",
+                  "https://i.giphy.com/media/3o7TKDhgKC52OZhV0k/giphy.webp",
+                  "https://i.giphy.com/media/m6vr46wnVUjjG/giphy.webp",
+                  "https://i.giphy.com/media/l49JIgBhX4X6hyCGY/giphy.webp",
+                  "https://i.giphy.com/media/J2a7ClzF1YfclNcfe5/giphy.webp"]
+    @mixer_image = mixer_urls.sample
   end
 
   def create
