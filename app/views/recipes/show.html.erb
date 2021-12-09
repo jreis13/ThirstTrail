@@ -10,9 +10,14 @@
           </div>
           <hr>
           <p class="ingredient-list">Ingredients:</p>
-            <% @recipe.ingredients.each do |ingredient| %>
-              <p class="font-size-ingredient"><%= ingredient.name %></p>
-            <% end %>
+
+          <div class="font-size-ingredient">
+            <ul>
+              <% @recipe.ingredients.each do |ingredient| %>
+                <li><%= RecipeIngredient.find_by(recipe: @recipe, ingredient: ingredient).measure %><%= ingredient.name %></li>
+              <% end %>
+            </ul>
+          </div>
           <hr>
           <p class="instructions">How to make it:</p>
           <div class="font-size-instruction"><%= @recipe.instruction %></div>
