@@ -4,6 +4,7 @@
   <hr>
   <div class="questions-container">
       <div class="row">
+          <p class="instructions">Your cocktails:</p>
           <% @favorites.each do |favorite| %>
           <div class="col-12 col-md-6">
           <%= link_to recipe_path(favorite.favoritable) do %>
@@ -29,6 +30,6 @@
 
 
 
-  <%# <% @favorites.each do |selection| %> %>
-    <%# <h1><%= selection.favoritable.name</h1> %> %>
-  <%# <% end %> %>
+  <%# <% @favorites.each do |selection| %>
+    <%# <h1><%= selection.favoritable.name</h1> %>
+  <%# <% end %>
