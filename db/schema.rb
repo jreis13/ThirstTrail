@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_12_09_121836) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -118,7 +117,6 @@ ActiveRecord::Schema.define(version: 2021_12_09_121836) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "alcohol"
     t.bigint "user_id", null: false
-    t.string "ingredient"
     t.index ["user_id"], name: "index_preferences_on_user_id"
   end
 
