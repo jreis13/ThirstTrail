@@ -4,7 +4,6 @@ require 'rest-client'
 require 'httparty'
 require "byebug"
 
-
 # Destroying DB
 puts "Destroying DB"
 RecipeIngredient.destroy_all
@@ -33,11 +32,11 @@ end
 
 # Recipe 1
 recipe = Recipe.create(name: "Absolutely Cranberry Smash",
-              event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Stir ingredients together. Serve over ice.",
-              alcohol: "Alcoholic",
-              cocktail_category: ["Fruity"],
-              image_url: "https://images.unsplash.com/photo-1486947799489-3fabdd7d32a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80")
+                       event_type: ["Home", "Business", "Special Ocasion"],
+                       instruction: "Stir ingredients together. Serve over ice.",
+                       alcohol: "Alcoholic",
+                       cocktail_category: ["Fruity"],
+                       image_url: "https://images.unsplash.com/photo-1486947799489-3fabdd7d32a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80")
 ingredients = ["Absolut Vodka", "Cranberry juice", "Ginger ale", "Ice"]
 ingredients.each do |ingredient|
   RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
@@ -45,11 +44,11 @@ end
 
 # Recipe 2
 recipe = Recipe.create(name: "Strawberry Margarita",
-              event_type: ["Home", "Business", "Special Ocasion"],
-              instruction: "Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.",
-              alcohol: "Alcoholic",
-              cocktail_category: ["Sour", "Salty"],
-              image_url: "https://images.unsplash.com/photo-1468465236047-6aac20937e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80")
+                       event_type: ["Home", "Business", "Special Ocasion"],
+                       instruction: "Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.",
+                       alcohol: "Alcoholic",
+                       cocktail_category: ["Sour", "Salty"],
+                       image_url: "https://images.unsplash.com/photo-1468465236047-6aac20937e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80")
 ingredients = ["Strawberry schnapps", "Tequila", "Triple sec", "Lemon juice", "Strawberries", "Salt"]
 ingredients.each do |ingredient|
   RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
@@ -346,7 +345,7 @@ recipe = Recipe.create(name: "Bellini Martini",
 
 # Recipe 26
 recipe = Recipe.create(name: "Mango Lassi",
-              event_type: ["Home", "Business", "Special Ocasion"],
+                       event_type: ["Home", "Business", "Special Ocasion"],
               instruction: "Put it all in a blender and pour over crushed ice. You can also use other fruits like strawberries and bananas.",
               alcohol: "Non-alcoholic",
               cocktail_category: ["Fruity"],
@@ -1010,7 +1009,7 @@ recipe = Recipe.create(name: "Black Russian",
               alcohol: "Alcoholic",
               cocktail_category: ["Sour"],
               image_url: "https://www.thecocktaildb.com/images/media/drink/8oxlqf1606772765.jpg")
-              ingredients = ["Coffee liqueur", "Vodka"],
+              ingredients = ["Coffee liqueur", "Vodka"]
               ingredients.each do |ingredient|
                 RecipeIngredient.create(recipe: recipe, ingredient: Ingredient.find_by(name: ingredient.downcase))
               end

@@ -19,20 +19,15 @@ ActiveStorage.start()
 
 // External imports
 import "bootstrap";
+import "controllers"
 
 // Internal imports, e.g:
 
  import { initSelect2 } from '../components/init_select2';
+ import { roulette } from '../components/roulette';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
    initSelect2();
-
-import { roulette } from '../components/roulette';
-
-document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  roulette();
+   roulette();
 });
-
-import "controllers"
