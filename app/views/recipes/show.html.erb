@@ -25,11 +25,6 @@
         </div>
         <hr>
       </div>
-      <% if current_user.favorited?(@recipe) %>
-        <div class="btn-recipe-show">
-        <%= link_to "Selection!", selection_recipes_path, class: "btn btn-ghost-recipe" %>
-      </div>
-      <% end %>
     <div class="btn-recipe-show">
       <%= link_to "Mix again!", new_preference_path, class: "btn btn-ghost-recipe" %>
     </div>
