@@ -1,3 +1,50 @@
+.cards-hiw {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 10px;
+  padding:10px
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-hiw {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards-hiw {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards-hiw {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards-hiw {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards-hiw {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+
 .main {
      width: 70vw;
      height: 90vh;
@@ -29,6 +76,7 @@
 
  .test1 {
      background-color: rgba(255, 255, 255, 0);
+     font-size: auto;
      height: 10vw;
      padding: 1vw;
      animation-name: text;
@@ -72,22 +120,22 @@
 //      font-family: 'Dancing Script', cursive
 //  }
 
- @media only screen and (max-width: 425px) {
-     .main {
-         width: 100vw;
-         padding: 3vw;
-         height: auto
-     }
+//  @media only screen and (max-width: 425px) {
+//      .main {
+//          width: 100vw;
+//          padding: 3vw;
+//          height: auto
+//      }
 
-     img {
-         height: 30vw;
-         width: 30vw;
-         margin: 5vw
-     }
+//      img {
+//          height: 30vw;
+//          width: 30vw;
+//          margin: 5vw
+//      }
 
-     .test1 {
-         height: 45vw;
-         padding: 3vw;
-         font-size: auto
-     }
- }
+//      .test1 {
+//          height: 45vw;
+//          padding: 3vw;
+//          font-size: auto
+//      }
+//  }
