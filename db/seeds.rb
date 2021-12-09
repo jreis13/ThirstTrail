@@ -2,7 +2,6 @@
 require 'json'
 require 'rest-client'
 require 'httparty'
-require "byebug"
 
 # Destroying DB
 puts "Destroying DB"
