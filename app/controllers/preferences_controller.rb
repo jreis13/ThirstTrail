@@ -40,9 +40,12 @@ class PreferencesController < ApplicationController
     @recipes = Recipe.where(alcohol: @preference.alcohol)
     @recipes = @recipes.where("? = ANY(event_type)", @preference.event_type)
     @recipes = @recipes.where("? = ANY(cocktail_category)", @preference.cocktail_category)
-    @recipes_results = get_recipes_results(@recipes,@preference)
+
     # Intersect recipes_results with recipes
-    @recipes = @recipes_results.sample(3)
+    if !@preference.ingredients.empty?
+      @recipes = get_recipes_results(@recipes,@preference)
+    end
+    @recipes = @recipes.sample(3)
   end
 
   def filter
