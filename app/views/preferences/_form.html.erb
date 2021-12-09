@@ -61,13 +61,13 @@
         </div>
       </li>
       <li class="splide__slide">
-        <div class="questions-container" id="question-ingredient">
+        <div class="questions-container-ingredient" id="question-ingredient">
           <div class="question">
             <p>Is there any ingredient you want in your cocktail?</p>
             <hr>
           </div>
           <div class="ingredient-choice">
-            <%= f.input :ingredient_ids, collection: @ingredients,
+            <%= f.input :ingredient_ids, label: 'Type your preferred ingredients:', collection: @ingredients,
             input_html: { multiple: true, class: 'js-example-basic-multiple' },
             required: false %>
           </div>

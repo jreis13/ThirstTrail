@@ -1,9 +1,16 @@
 .ingredient-list, .instructions {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .font-size-ingredient {
   font-size: 16px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.bullets {
+  list-style-type: none;
 }
 
 .font-size-instruction {
