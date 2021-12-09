@@ -15,6 +15,9 @@ Rails.application.routes.draw do
    member do
      patch "favorite", to: "favourites#favorite"
    end
+   collection do
+      get 'selection', to: "favourites#selection"
+   end
   end
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
