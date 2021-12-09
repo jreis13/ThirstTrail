@@ -6,19 +6,13 @@ class PreferencesController < ApplicationController
     @alcohol = ["Alcoholic", "Non-alcoholic"]
     @event_type = ["Home", "Business", "Special Ocasion"]
     @cocktail_category = ["Fruity", "Spicy", "Salty", "Sour"]
-    @ingredients = []
-    @recipes = Recipe.all
-    @recipes.each do |recipe|
-      recipe.ingredient.each do |elem|
-        @ingredients += [elem.gsub(/[^a-z0-9\s]/i, '').strip]
-      end
-    end
-    @ingredients = @ingredients.flatten.uniq
+    @ingredients = Ingredient.all
     @preference = Preference.new
   end
 
   def create
     @preference = Preference.new(preference_params)
+    @preference.user = current_user
     if @preference.save
       redirect_to @preference
     elsif @preference.alcohol.empty?
@@ -37,9 +31,12 @@ class PreferencesController < ApplicationController
 
   def show
     @preference = Preference.find(params[:id])
-    @recipes = Recipe.where(alcohol: @preference.alcohol).where("? = ANY(event_type)", @preference.event_type).where("? = ANY(cocktail_category)", @preference.cocktail_category).where("? = ANY(ingredient)", @preference.ingredient)
+    @recipes = Recipe.where(alcohol: @preference.alcohol)
+    @recipes = @recipes.where("? = ANY(event_type)", @preference.event_type)
+    @recipes = @recipes.where("? = ANY(cocktail_category)", @preference.cocktail_category)
+    # Intersect recipes_results with recipes
+    @recipes_results = get_recipes_results(@preference)
     @recipes = @recipes.sample(3)
-
   end
 
   def filter
@@ -54,7 +51,17 @@ class PreferencesController < ApplicationController
   private
 
   def preference_params
-    params.require(:preference).permit(:event_type, :alcohol, :cocktail_category, :ingredient)
+    params.require(:preference).permit(:event_type, :alcohol, :cocktail_category, ingredient_ids: [])
+  end
+
+  def get_recipes_results(preference)
+      recipes_results = []
+      preference.ingredients.each do |ingredient|
+       RecipeIngredient.where(ingredient: ingredient).each do |result|
+        recipes_results << result.recipe
+       end
+    end
+    recipes_results
   end
 
   # recipes = Recipe.where(alcohol: current_user.preferences.alcohol)

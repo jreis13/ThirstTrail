@@ -60,15 +60,17 @@
           <p class='hint'>💡 Did you know? There are only 3 "official" cocktail categories according to the International Bartenders Association.</p>
         </div>
       </li>
-       <li class="splide__slide">
+      <li class="splide__slide">
         <div class="questions-container" id="question-ingredient">
           <div class="question">
             <p>Is there any ingredient you want in your cocktail?</p>
             <hr>
           </div>
-          <%= f.input :ingredient, collection: @ingredients,
+          <div class="ingredient-choice">
+            <%= f.input :ingredient_ids, collection: @ingredients,
+            input_html: { multiple: true, class: 'js-example-basic-multiple' },
             required: false %>
-          <p class='hint'>💡 Did you know? Our mixologists work with over 200 ingredients.</p>
+          </div>
         </div>
       </li>
 
