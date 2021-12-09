@@ -10,7 +10,7 @@
           <%= link_to recipe_path(favorite.favoritable) do %>
             <div class="card card-recipe mx-auto" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=favorite.favoritable.image_url%>); background-size: cover" >
               <%= render "recipes/favorite", recipe: favorite.favoritable %>
-              <h2 class="card-recipe-title"><%= favorite.favoritable.name %></h2>
+              <h2 class="card-recipe-favorite"><%= favorite.favoritable.name %></h2>
             </div>
             <% end %>
           </div>
