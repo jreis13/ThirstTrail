@@ -25,9 +25,11 @@ import "controllers"
 
  import { initSelect2 } from '../components/init_select2';
  import { roulette } from '../components/roulette';
+ //import { favoriteLink } from "../components/favorite_link"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
    initSelect2();
    roulette();
+   //favoriteLink();
 });

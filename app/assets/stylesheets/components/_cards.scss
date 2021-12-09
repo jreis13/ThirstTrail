@@ -9,7 +9,7 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   color: beige;
-  padding: 10px;
+  //padding: 10px;
 }
 
 .card-recipe-title {
@@ -29,8 +29,19 @@
   object-fit: contain;
 }
 
-.card{
+.col-12{
   a{
     color:white;
+    display: flex;
+    padding: 15px;
   }
+}
+
+.bigger-link {
+    align-self: flex-end;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
 }
