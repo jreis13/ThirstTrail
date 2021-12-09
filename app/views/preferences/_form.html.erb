@@ -60,15 +60,17 @@
           <p class='hint'>💡 Did you know? There are only 3 "official" cocktail categories according to the International Bartenders Association.</p>
         </div>
       </li>
-       <li class="splide__slide">
-        <div class="questions-container" id="question-ingredient">
+      <li class="splide__slide">
+        <div class="questions-container-ingredient" id="question-ingredient">
           <div class="question">
             <p>Is there any ingredient you want in your cocktail?</p>
             <hr>
           </div>
-          <%= f.input :ingredient, collection: @ingredients,
+          <div class="ingredient-choice">
+            <%= f.input :ingredient_ids, label: 'Type your preferred ingredients:', collection: @ingredients,
+            input_html: { multiple: true, class: 'js-example-basic-multiple' },
             required: false %>
-          <p class='hint'>💡 Did you know? Our mixologists work with over 200 ingredients.</p>
+          </div>
         </div>
       </li>
 
@@ -77,10 +79,7 @@
           <div class="question">
             <p>Our expert mixologists are ready to create your recipe!</p>
             <hr>
-            <div><iframe src="https://giphy.com/embed/l3fQaE2lbSAPUnB04" width="100%" height="190px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-          <br>
-          <br>
-          <br>
+            <div><iframe src=<%= @mixer_image %> width="280px" height="400px" frameBorder="0" class="giphy-embed centering" allowFullScreen></iframe></div>
             <%= f.submit "Mix it!", :class => "btn-recipe" %>
           </div>
       </li>

@@ -14,7 +14,7 @@
   <div class="row">
       <div class="col-12 col-md-6">
         <div class="home-card">
-          <h2 class="info-title">HOW IT WORKS</h2>
+          <%= link_to "HOW IT WORKS", howitworks_path, class: "info-title" %><i class="fas fa-external-link-alt"></i>
           <p class="info-details">Tell us about your event, share your mood, pick your ingredients and let our app generate delicious cocktails for your parties.</p>
         </div>
       </div>
@@ -26,17 +26,11 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="home-card">
-          <h2 class="info-title">OUR PARTNERS</h2>
+          <%= link_to "OUR PARTNERS", partners_path, class: "info-title" %><i class="fas fa-external-link-alt"></i>
           <p class="info-details">Our partners include Le Wagon Portugal and Rent-a-Mixer, an app by ThirstTrail.</p>
         </div>
       </div>
 
-      <div class="col-12 col-md-6">
-        <div class="home-card">
-          <%= link_to "REVIEWS", howitworks_path, class: "info-title" %><i class="fas fa-external-link-alt"></i>
-          <p class="info-details">Check our reviews by some of our beloved cocktail enthusiasts!</p>
-        </div>
-      </div>
       <div class="col-12 col-md-6">
         <div class="home-card">
           <%= link_to "CONTACT US", contact_path, class: "info-title" %><i class="fas fa-external-link-alt"></i>
@@ -46,9 +40,10 @@
       <div class="col-12 col-md-6">
         <div class="home-card">
           <h2 class="info-title">FIND US</h2>
-          <p class="info-details">You can find us at the following pages:
-          <br>
-          <a target="_blank" href="https://github.com/jreis13/ThirstTrail"><i class="fab fa-github"></i></a></p>
+          <p class="info-details">You can find us at:
+          <div>
+            <a href="https://github.com/jreis13/ThirstTrail" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
       <div class="footer">

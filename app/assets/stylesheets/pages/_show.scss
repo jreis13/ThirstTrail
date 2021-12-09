@@ -1,13 +1,31 @@
 .ingredient-list, .instructions {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .font-size-ingredient {
   font-size: 16px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.bullets {
+  list-style-type: none;
+}
+
+.giphy-embed {
+  pointer-events: none;
 }
 
 .font-size-instruction {
   font-size: 16px;
   font-weight: lighter;
   padding-bottom: 15px;
+}
+
+.info-details-show {
+  color: black;
+  font-size: 16px;
+  // letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
 }

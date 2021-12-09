@@ -88,3 +88,31 @@
   background-position: bottom;
   background-repeat: no-repeat;
 }
+
+.ingredient-choice {
+  display: flex;
+  justify-content: center;
+  padding-top: 21vh;
+}
+
+.select2-results__options, .select2-search--inline{
+  font-size: 14px !important;
+ }
+
+
+.questions-container-ingredient {
+  padding: 30px 30px 0;
+  background-image: asset-url("ingredient-bg.gif");
+  // background-image: asset-url("bg-test.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  max-width: 450px;
+  min-height: 80vh;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
