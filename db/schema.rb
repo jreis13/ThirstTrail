@@ -117,6 +117,7 @@ ActiveRecord::Schema.define(version: 2021_12_08_170515) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "alcohol"
     t.bigint "user_id", null: false
+    t.string "ingredient"
     t.index ["user_id"], name: "index_preferences_on_user_id"
   end
 
