@@ -12,7 +12,7 @@
           <p class="ingredient-list">Ingredients:</p>
 
           <div class="font-size-ingredient">
-            <ul>
+            <ul class="bullets">
               <% @recipe.ingredients.each do |ingredient| %>
                 <li><%= RecipeIngredient.find_by(recipe: @recipe, ingredient: ingredient).measure %><%= ingredient.name %></li>
               <% end %>
