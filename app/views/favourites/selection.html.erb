@@ -1,13 +1,13 @@
 
 <div class="container">
-  <h2 class="team-title">This is your event collection.</h2>
-  <hr>
+  <h2 class="team-title">My cocktails</h2>
+  <hr class="divider">
   <div class="questions-container">
-    <p class="instructions">Your cocktails:</p>
+    <%# <p class="instructions">Your cocktails:</p> %>
     <div class="row">
       <% @favorites.each do |favorite| %>
         <div class="col-12 col-md-6">
-            <div class="card card-recipe mx-auto" id="<%= favorite.favoritable.id %>" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=favorite.favoritable.image_url%>); background-size: cover" >
+            <div class="card card-recipe-fav mx-auto" id="<%= favorite.favoritable.id %>" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url(<%=favorite.favoritable.image_url%>); background-size: cover" >
             <%= render "recipes/favorite", recipe: favorite.favoritable %>
             <%= link_to recipe_path(favorite.favoritable), class: "bigger-link" do %>
               <h2 class="card-recipe-title"><%= favorite.favoritable.name %></h2>
@@ -18,12 +18,11 @@
       <hr>
       <hr>
     </div>
-    <div class="btn-recipe-show">
-      <%= link_to "Mix again!", new_preference_path, class: "btn btn-ghost-recipe" %>
-    </div>
-      <p class="info-details-luck">Feeling lucky? 🍀</p>
-      <p class="info-details-show">Try our <strong><%= link_to "cocktail roulette", roulette_path, class: "roulette-link" %></strong>.</p>
-  </div>
+      <div class="btns-start">
+        <%= link_to "Mix again!", new_preference_path, class: "btn btn-ghost-build" %>
+        <p class="info-details-luck-fav">Feeling lucky? 🍀</p>
+        <p class="info-details-start-fav">Try our <strong><%= link_to "cocktail roulette", roulette_path, class: "roulette-link" %></strong>.</p>
+      </div>
 </div>
 
 
