@@ -12,9 +12,23 @@
   //padding: 10px;
 }
 
+.card-recipe-fav {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  height: 170px;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: beige;
+  //padding: 10px;
+}
+
 .card-recipe-title {
-  align-self: flex-end;
   font-size: 20px;
+  color: white;
 }
 
 .card-recipe-title-choices {
@@ -35,19 +49,19 @@
   object-fit: contain;
 }
 
-// .col-12{
-//   a{
-//     color:white;
-//     display: flex;
-//     padding: 15px;
-//   }
-// }
+.col-12{
+  a.favorite-link{
+    color:white;
+    display: flex;
+    padding: 15px;
+  }
+}
 
 .bigger-link {
-    align-self: flex-end;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 15px;
 }
